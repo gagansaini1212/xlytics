@@ -52,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
   .title {
     font-family: ${theme.primaryFontFamily};
   }
-  button {
+  .button {
     font-family: ${theme.primaryFontFamily};
   }
   .button.is-primary {
