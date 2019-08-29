@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Section = styled.section`
   background-color: ${props => props.theme.darkShades};
@@ -124,22 +125,28 @@ const Footer = () => (
             </div>
             <div className="column">
               <Icons className="has-text-right">
-                <a href="#">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/PackrsOfficial/?modal=admin_todo_tour"
+                >
                   <span className="icon has-text-info">
                     <i className="fab fa-facebook-square" />
                   </span>
                 </a>
-                <a href="#">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/packrs_official/"
+                >
                   <span className="icon has-text-info">
                     <i className="fab fa-instagram" />
                   </span>
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://twitter.com/PackrsOfficial">
                   <span className="icon has-text-info">
                     <i className="fab fa-twitter-square" />
                   </span>
                 </a>
-                <a href="#">
+                <a target="_blank" href="/">
                   <span className="icon has-text-info">
                     <i className="fab fa-linkedin" />
                   </span>
