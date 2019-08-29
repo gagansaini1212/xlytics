@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 
 const Section = styled.section`
   background-color: ${props => props.theme.darkShades};
