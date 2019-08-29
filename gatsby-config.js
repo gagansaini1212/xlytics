@@ -9,8 +9,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -25,10 +23,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-nprogress`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        color: config.themeColor,
-        showSpinner: false,
+        defaultLayouts: {
+          default: require.resolve('./src/components/PageLayout.js'),
+        },
       },
     },
     {

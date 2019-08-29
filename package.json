@@ -20,6 +20,8 @@
     "lint": "eslint --ignore-path .gitignore \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.4.0",
+    "@mdx-js/react": "^1.4.0",
     "apollo-cache-inmemory": "^1.6.3",
     "apollo-client": "^2.6.4",
     "apollo-link-context": "^1.0.18",
@@ -29,13 +31,10 @@
     "gatsby-plugin-google-analytics": "^2.0.18",
     "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-manifest": "^2.0.25",
-    "gatsby-plugin-nprogress": "^2.0.10",
+    "gatsby-plugin-mdx": "^1.0.33",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.11",
-    "gatsby-plugin-sharp": "^2.0.32",
     "gatsby-plugin-styled-components": "^3.0.7",
-    "gatsby-source-filesystem": "^2.0.28",
-    "gatsby-transformer-sharp": "^2.1.17",
     "isomorphic-unfetch": "^3.0.0",
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",

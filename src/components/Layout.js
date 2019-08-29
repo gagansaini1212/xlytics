@@ -8,7 +8,9 @@ import config from '../utils/config';
 import Header from './Header';
 import Footer from './Footer';
 
-const Container = styled.div``;
+const Container = styled.div`
+  min-height: 70vh;
+`;
 
 const IndexLayout = ({ children, hideHeader }) => (
   <ThemeProvider theme={theme}>

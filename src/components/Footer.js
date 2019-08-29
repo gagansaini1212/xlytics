@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 import config from '../utils/config';
 
@@ -68,16 +69,28 @@ const Footer = () => (
             <h4 className="title is-4">Packrs</h4>
             <ul>
               <li>
-                <a>About Us</a>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
-                <a>News & Updates</a>
+                <a href="https://news.packrs.co/">News & Updates</a>
               </li>
               <li>
-                <a>Support</a>
+                <a
+                  href="https://packrs.freshdesk.com/support/tickets/new"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Support
+                </a>
               </li>
               <li>
-                <a>Service Stats</a>
+                <a
+                  href="https://packrs-334.freshstatus.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Server Stats
+                </a>
               </li>
             </ul>
           </div>
@@ -85,16 +98,13 @@ const Footer = () => (
             <h4 className="title is-4">Our Information</h4>
             <ul>
               <li>
-                <a>FAQ</a>
+                <Link to="/faq">FAQ</Link>
               </li>
               <li>
-                <a>Return Policy</a>
+                <Link to="/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <a>Privacy Policy</a>
-              </li>
-              <li>
-                <a>Terms & Conditions</a>
+                <Link to="/terms-and-conditions">Terms & Conditions</Link>
               </li>
             </ul>
           </div>
@@ -102,16 +112,40 @@ const Footer = () => (
             <h4 className="title is-4">Reach Us</h4>
             <ul>
               <li>
-                <a>Careers</a>
+                <a
+                  href="https://perminderklair.freshteam.com/jobs/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Careers
+                </a>
               </li>
               <li>
-                <a>Apply as Business</a>
+                <a
+                  href="https://airtable.com/shrzgjKLLyiwUVRA0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Apply as Business
+                </a>
               </li>
               <li>
-                <a>Apply as Delivery Partners</a>
+                <a
+                  href="https://airtable.com/shrNYyLynebosW850"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Apply as Delivery Partners
+                </a>
               </li>
               <li>
-                <a>Contact Us</a>
+                <a
+                  href="https://packrs.freshdesk.com/support/tickets/new"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact Us
+                </a>
               </li>
             </ul>
           </div>
