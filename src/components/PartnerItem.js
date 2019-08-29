@@ -5,13 +5,17 @@ const Card = styled.div`
   a {
     color: ${props => props.theme.darkAccent};
   }
+  img {
+    width: 100%;
+    height: 400px;
+  }
 `;
 
 const PartnerItem = ({ title }) => (
   <div className="column">
     <Card className="card">
       <div className="card-image">
-        <figure className="image is-4by3">
+        <figure className="image">
           <img
             src="https://bulma.io/images/placeholders/1280x960.png"
             alt="Placeholder "

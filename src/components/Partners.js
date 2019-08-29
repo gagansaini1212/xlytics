@@ -1,16 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import PartnerItem from './PartnerItem';
 
+const Section = styled.section`
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+`;
+
 const Partners = () => (
-  <section className="section">
+  <Section className="section">
     <div className="container">
       <div className="columns">
         <PartnerItem title="Become a Rider" />
         <PartnerItem title="Become a Partner" />
       </div>
     </div>
-  </section>
+  </Section>
 );
 
 export default Partners;

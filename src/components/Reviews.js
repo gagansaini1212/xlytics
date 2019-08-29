@@ -1,9 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import ReviewItem from './ReviewItem';
 
+const Section = styled.section`
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+`;
+
 const Reviews = () => (
-  <section className="section">
+  <Section className="section">
     <div className="container">
       <div className="columns">
         <div className="column is-one-third">
@@ -18,7 +24,7 @@ const Reviews = () => (
         </div>
       </div>
     </div>
-  </section>
+  </Section>
 );
 
 export default Reviews;
