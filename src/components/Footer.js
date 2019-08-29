@@ -127,6 +127,7 @@ const Footer = () => (
                 <a
                   target="_blank"
                   href="https://www.facebook.com/PackrsOfficial/?modal=admin_todo_tour"
+                  rel="noopener noreferrer"
                 >
                   <span className="icon has-text-info">
                     <i className="fab fa-facebook-square" />
@@ -135,12 +136,17 @@ const Footer = () => (
                 <a
                   target="_blank"
                   href="https://www.instagram.com/packrs_official/"
+                  rel="noopener noreferrer"
                 >
                   <span className="icon has-text-info">
                     <i className="fab fa-instagram" />
                   </span>
                 </a>
-                <a target="_blank" href="https://twitter.com/PackrsOfficial">
+                <a
+                  target="_blank"
+                  href="https://twitter.com/PackrsOfficial"
+                  rel="noopener noreferrer"
+                >
                   <span className="icon has-text-info">
                     <i className="fab fa-twitter-square" />
                   </span>
