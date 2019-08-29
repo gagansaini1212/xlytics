@@ -4,20 +4,29 @@ import { Link } from 'gatsby';
 import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
+import HomeHero from '../components/HomeHero';
+import Categories from '../components/Categories';
+import HowWeWork from '../components/HowWeWork';
+import AboutApp from '../components/AboutApp';
+import Partners from '../components/Partners';
+import Reviews from '../components/Reviews';
 
 export default class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
         <Seo
-          title="Home"
-          description="Welcome to GatsbyJs v1"
-          url={`${config.siteUrl}`}
+          title="Packrs"
+          description="Deliver anything, anywhere, anytime"
+          url={config.siteUrl}
+          image={config.image}
         />
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <Link to="/contact">Contact</Link>
+        <HomeHero />
+        <Categories />
+        <HowWeWork />
+        <AboutApp />
+        <Partners />
+        <Reviews />
       </Layout>
     );
   }

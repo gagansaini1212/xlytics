@@ -5,6 +5,7 @@ module.exports = {
   author: 'Parminder Klair',
   description: 'A delivery platform for anything',
   siteUrl: 'https://www.packrs.co/',
+  image: '/images/packrs-poster.png',
 
   twitter: 'https://twitter.com/PackrsOfficial',
   facebook: 'https://www.facebook.com/PackrsOfficial',

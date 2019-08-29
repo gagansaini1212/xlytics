@@ -41,7 +41,10 @@
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
-    "styled-components": "^4.2.0"
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^4.2.0",
+    "styled-reset-advanced": "^1.0.1"
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",
