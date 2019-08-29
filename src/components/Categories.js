@@ -1,26 +1,27 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import CategoryItem from './CategoryItem';
 
+const Section = styled.section`
+  h2.title {
+    margin-bottom: 3.2rem;
+  }
+`;
+
 const Categories = () => (
-  <section className="section">
+  <Section className="section">
     <div className="container">
-      <div className="columns">
-        <div className="column">
-          <CategoryItem />
-        </div>
-        <div className="column">
-          <CategoryItem />
-        </div>
-        <div className="column">
-          <CategoryItem />
-        </div>
-        <div className="column">
-          <CategoryItem />
-        </div>
+      <h2 className="title has-text-centered">What you can get from Packrs?</h2>
+      <div className="columns is-multiline">
+        <CategoryItem />
+        <CategoryItem />
+        <CategoryItem />
+        <CategoryItem />
+        <CategoryItem />
       </div>
     </div>
-  </section>
+  </Section>
 );
 
 export default Categories;
