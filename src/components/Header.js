@@ -72,17 +72,25 @@ export default class Header extends React.Component {
             </div>
             <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
               <div className="navbar-start">
-                <Link className="navbar-item">Home</Link>
-                <Link className="navbar-item">About</Link>
-                <Link className="navbar-item">Support</Link>
+                <Link to="/" className="navbar-item">
+                  Home
+                </Link>
+                <Link to="/" className="navbar-item">
+                  About
+                </Link>
+                <Link to="/" className="navbar-item">
+                  Support
+                </Link>
               </div>
               <div className="navbar-end">
                 <div className="navbar-item">
                   <div className="buttons is-hidden-mobile">
-                    <Link className="button is-primary">
+                    <Link to="/" className="button is-primary">
                       <strong>Become a Rider</strong>
                     </Link>
-                    <Link className="button is-light">Become a Partner</Link>
+                    <Link to="/" className="button is-light">
+                      Become a Partner
+                    </Link>
                   </div>
                 </div>
               </div>
