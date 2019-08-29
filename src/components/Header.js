@@ -5,6 +5,9 @@ import { Link } from 'gatsby';
 const Section = styled.section`
   padding: 1rem 1.5rem;
   font-family: ${props => props.theme.primaryFontFamily};
+  .navbar {
+    background-color: transparent;
+  }
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
@@ -13,6 +16,9 @@ const Section = styled.section`
   }
   .navbar-item {
     font-weight: 700;
+    :hover {
+      color: ${props => props.theme.darkAccent};
+    }
   }
 `;
 

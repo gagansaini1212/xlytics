@@ -12,14 +12,14 @@ const Section = styled.section`
 const HowWeWork = () => (
   <Section className="section">
     <div className="container">
-      <h2 className="title has-text-centered has-text-weight-bold">
+      <h2 className="title is-2 has-text-centered has-text-weight-bold">
         Our deliveries process
       </h2>
       <div className="columns is-multiline">
-        <HowWeWorkItem />
-        <HowWeWorkItem />
-        <HowWeWorkItem />
-        <HowWeWorkItem />
+        <HowWeWorkItem title="Any product you love" />
+        <HowWeWorkItem title="45 mins delivery" />
+        <HowWeWorkItem title="Save time & money" />
+        <HowWeWorkItem title="Earn cash and free deliveries" />
       </div>
     </div>
   </Section>

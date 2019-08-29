@@ -9,6 +9,11 @@ const Card = styled.div`
     width: 100%;
     height: 400px;
   }
+  .button {
+    > span {
+      margin-left: 6px !important;
+    }
+  }
 `;
 
 const PartnerItem = ({ title }) => (
@@ -29,7 +34,16 @@ const PartnerItem = ({ title }) => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             nec iaculis mauris.
           </p>
-          <a href="#">Find out more</a>
+          <a className="button is-link">
+            Find out more
+            <span
+              className="icon is-small"
+              role="img"
+              aria-label="Pointing Right"
+            >
+              👉
+            </span>
+          </a>
         </div>
       </div>
     </Card>

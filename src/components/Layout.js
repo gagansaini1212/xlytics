@@ -10,7 +10,7 @@ import Footer from './Footer';
 
 const Container = styled.div``;
 
-const IndexLayout = ({ children }) => (
+const IndexLayout = ({ children, hideHeader }) => (
   <ThemeProvider theme={theme}>
     <React.Fragment>
       <Helmet>
@@ -20,7 +20,7 @@ const IndexLayout = ({ children }) => (
         <meta description={config.description} />
       </Helmet>
       <GlobalStyle />
-      <Header />
+      {!hideHeader && <Header />}
       <Container>{children}</Container>
       <Footer />
     </React.Fragment>

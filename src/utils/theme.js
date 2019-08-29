@@ -49,13 +49,21 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${theme.secondaryFontFamily};
   }
-  .button {
-    .is-primary {
-      background-color: ${theme.mainBrandColor};
-      transition: background-color 0.2s ease;
-      :hover {
-        background-color: ${darken(0.06, theme.mainBrandColor)};
-      }
+  .title {
+    font-family: ${theme.primaryFontFamily};
+  }
+  .button.is-primary {
+    background-color: ${theme.mainBrandColor};
+    transition: background-color 0.2s ease;
+    :hover {
+      background-color: ${darken(0.06, theme.mainBrandColor)};
+    }
+  }
+  .button.is-link {
+    background-color: ${theme.darkAccent};
+    transition: background-color 0.2s ease;
+    :hover {
+      background-color: ${darken(0.06, theme.darkAccent)};
     }
   }
   .button, .input, .card {

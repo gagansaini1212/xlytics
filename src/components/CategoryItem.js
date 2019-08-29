@@ -6,6 +6,7 @@ const Container = styled.div`
   box-shadow: none;
   transition: box-shadow 0.2s ease;
   padding: 1rem 0.75rem;
+  margin-bottom: 2rem;
   :hover {
     box-shadow: ${props => props.theme.boxShadow};
   }
@@ -14,8 +15,8 @@ const Container = styled.div`
   }
 `;
 
-const CategoryItem = () => (
-  <Container className="column is-one-fifth">
+const CategoryItem = ({ title }) => (
+  <Container className="column is-one-quarter">
     <figure className="image is-96x96">
       <img
         className="is-rounded "
@@ -24,7 +25,7 @@ const CategoryItem = () => (
       />
     </figure>
     <h5 className="has-text-centered has-text-weight-semibold is-size-5">
-      Category Name
+      {title}
     </h5>
   </Container>
 );

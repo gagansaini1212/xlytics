@@ -12,15 +12,18 @@ const Section = styled.section`
 const Categories = () => (
   <Section className="section">
     <div className="container">
-      <h2 className="title has-text-centered has-text-weight-bold">
+      <h2 className="title is-2 has-text-centered has-text-weight-bold">
         What you can get from Packrs?
       </h2>
       <div className="columns is-multiline">
-        <CategoryItem />
-        <CategoryItem />
-        <CategoryItem />
-        <CategoryItem />
-        <CategoryItem />
+        <CategoryItem title="Pick n Drop" />
+        <CategoryItem title="Food & Drinks" />
+        <CategoryItem title="Groceries" />
+        <CategoryItem title="Fruit & Veg" />
+        <CategoryItem title="Meet & Fish" />
+        <CategoryItem title="Pharmacy" />
+        <CategoryItem title="Gifts & Stationary" />
+        <CategoryItem title="Electronics" />
       </div>
     </div>
   </Section>

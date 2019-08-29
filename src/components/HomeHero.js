@@ -14,6 +14,15 @@ const HelpText = styled.p`
   margin-top: 1.5rem;
 `;
 
+const StoreContainer = styled.div`
+  margin-top: 3rem;
+  img {
+    margin-right: 10px;
+    width: auto;
+    height: 42px;
+  }
+`;
+
 const HomeHero = () => (
   <Section className="section">
     <div className="container">
@@ -40,6 +49,17 @@ const HomeHero = () => (
               <HelpText>
                 We’ll send you a text with a link to download the app.
               </HelpText>
+              <StoreContainer>
+                <a href="#">
+                  <img src="/images/store-ios.png" alt="Packrs ios store" />
+                </a>
+                <a href="#">
+                  <img
+                    src="/images/store-android.png"
+                    alt="Packrs android store"
+                  />
+                </a>
+              </StoreContainer>
             </div>
           </section>
         </div>

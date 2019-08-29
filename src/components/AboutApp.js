@@ -47,8 +47,8 @@ const AboutApp = () => {
   return (
     <Section className="section">
       <div className="container">
-        <h2 className="title has-text-centered has-text-weight-bold">
-          How does Packrs works?
+        <h2 className="title is-2 has-text-centered has-text-weight-bold">
+          Using Packrs
         </h2>
         <Slider {...settings}>
           <div>

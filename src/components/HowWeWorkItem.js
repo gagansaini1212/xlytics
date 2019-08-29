@@ -5,7 +5,7 @@ const Box = styled.div`
   box-shadow: none;
 `;
 
-const CategoryItem = () => (
+const CategoryItem = ({ title }) => (
   <div className="column is-half">
     <Box className="box">
       <article className="media">
@@ -13,13 +13,13 @@ const CategoryItem = () => (
           <figure className="image is-128x128">
             <img
               src="https://bulma.io/images/placeholders/128x128.png"
-              alt="Image"
+              alt="category"
             />
           </figure>
         </div>
         <div className="media-content">
           <div className="content">
-            <h3 className="title is-3">Title 5</h3>
+            <h3 className="title is-3">{title}</h3>
             <p className="is-size-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>

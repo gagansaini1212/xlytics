@@ -13,7 +13,12 @@ const Reviews = () => (
     <div className="container">
       <div className="columns">
         <div className="column is-one-third">
-          <p className="title is-2">Reviews</p>
+          <p className="title is-2">
+            Reviews{' '}
+            <span role="img" aria-label="Writing Hand">
+              ✍️
+            </span>
+          </p>
           <p className="subtitle is-4">What our customers say?</p>
         </div>
         <div className="column">

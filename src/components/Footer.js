@@ -26,6 +26,23 @@ const Section = styled.section`
   }
 `;
 
+const StoreContainer = styled.div`
+  margin-top: 3rem;
+  img {
+    margin-right: 10px;
+    width: auto;
+    height: 42px;
+  }
+`;
+
+const Icons = styled.div`
+  .icon {
+    color: ${props => props.theme.lightShades} !important;
+    font-size: 1.7rem;
+    margin-left: 10px;
+  }
+`;
+
 const Footer = () => (
   <Section className="section">
     <div className="container">
@@ -33,47 +50,66 @@ const Footer = () => (
         <div className="columns">
           <div className="column">
             <h4 className="title is-4">Download The App</h4>
-            <p>app store image here</p>
+            <StoreContainer>
+              <a href="#">
+                <img src="/images/store-ios.png" alt="Packrs ios store" />
+              </a>
+              <a href="#">
+                <img
+                  src="/images/store-android.png"
+                  alt="Packrs android store"
+                />
+              </a>
+            </StoreContainer>
           </div>
           <div className="column">
-            <h4 className="title is-4">Title</h4>
+            <h4 className="title is-4">Packrs</h4>
             <ul>
               <li>
-                <a>Coffee</a>
+                <a>About Us</a>
               </li>
               <li>
-                <a>Tea</a>
+                <a>News & Updates</a>
               </li>
               <li>
-                <a>Milk</a>
+                <a>Support</a>
+              </li>
+              <li>
+                <a>Service Stats</a>
               </li>
             </ul>
           </div>
           <div className="column">
-            <h4 className="title is-4">Title</h4>
+            <h4 className="title is-4">Our Information</h4>
             <ul>
               <li>
-                <a>Coffee</a>
+                <a>FAQ</a>
               </li>
               <li>
-                <a>Tea</a>
+                <a>Return Policy</a>
               </li>
               <li>
-                <a>Milk</a>
+                <a>Privacy Policy</a>
+              </li>
+              <li>
+                <a>Terms & Conditions</a>
               </li>
             </ul>
           </div>
           <div className="column">
-            <h4 className="title is-4">Title</h4>
+            <h4 className="title is-4">Reach Us</h4>
             <ul>
               <li>
-                <a>Coffee</a>
+                <a>Careers</a>
               </li>
               <li>
-                <a>Tea</a>
+                <a>Apply as Business</a>
               </li>
               <li>
-                <a>Milk</a>
+                <a>Apply as Delivery Partners</a>
+              </li>
+              <li>
+                <a>Contact Us</a>
               </li>
             </ul>
           </div>
@@ -87,7 +123,28 @@ const Footer = () => (
               </p>
             </div>
             <div className="column">
-              <p className="has-text-right">social icons here</p>
+              <Icons className="has-text-right">
+                <a href="#">
+                  <span className="icon has-text-info">
+                    <i className="fab fa-facebook-square" />
+                  </span>
+                </a>
+                <a href="#">
+                  <span className="icon has-text-info">
+                    <i className="fab fa-instagram" />
+                  </span>
+                </a>
+                <a href="#">
+                  <span className="icon has-text-info">
+                    <i className="fab fa-twitter-square" />
+                  </span>
+                </a>
+                <a href="#">
+                  <span className="icon has-text-info">
+                    <i className="fab fa-linkedin" />
+                  </span>
+                </a>
+              </Icons>
             </div>
           </div>
         </div>
