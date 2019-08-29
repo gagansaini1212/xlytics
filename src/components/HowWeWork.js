@@ -9,6 +9,33 @@ const Section = styled.section`
   }
 `;
 
+const items = [
+  {
+    id: 1,
+    title: 'Any product you love',
+    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: 'https://bulma.io/images/placeholders/128x128.png',
+  },
+  {
+    id: 2,
+    title: '45 mins delivery',
+    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: 'https://bulma.io/images/placeholders/128x128.png',
+  },
+  {
+    id: 3,
+    title: 'Save time & money',
+    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: 'https://bulma.io/images/placeholders/128x128.png',
+  },
+  {
+    id: 4,
+    title: 'Earn cash and free deliveries',
+    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: 'https://bulma.io/images/placeholders/128x128.png',
+  },
+];
+
 const HowWeWork = () => (
   <Section className="section">
     <div className="container">
@@ -16,10 +43,9 @@ const HowWeWork = () => (
         Our delivery process
       </h2>
       <div className="columns is-multiline">
-        <HowWeWorkItem title="Any product you love" />
-        <HowWeWorkItem title="45 mins delivery" />
-        <HowWeWorkItem title="Save time & money" />
-        <HowWeWorkItem title="Earn cash and free deliveries" />
+        {items.map(item => (
+          <HowWeWorkItem key={item.id} item={item} />
+        ))}
       </div>
     </div>
   </Section>

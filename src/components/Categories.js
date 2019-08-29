@@ -13,42 +13,42 @@ const categories = [
   {
     id: 1,
     title: 'Pick n Drop',
-    image: '',
+    image: 'https://bulma.io/images/placeholders/1280x960.png',
   },
   {
     id: 2,
     title: 'Food & Drinks',
-    image: '',
+    image: 'https://bulma.io/images/placeholders/1280x960.png',
   },
   {
     id: 3,
     title: 'Groceries',
-    image: '',
+    image: 'https://bulma.io/images/placeholders/1280x960.png',
   },
   {
     id: 4,
     title: 'Fruit & Veg',
-    image: '',
+    image: 'https://bulma.io/images/placeholders/1280x960.png',
   },
   {
     id: 5,
     title: 'Meet & Fish',
-    image: '',
+    image: 'https://bulma.io/images/placeholders/1280x960.png',
   },
   {
     id: 6,
     title: 'Pharmacy',
-    image: '',
+    image: 'https://bulma.io/images/placeholders/1280x960.png',
   },
   {
     id: 7,
     title: 'Gifts & Stationary',
-    image: '',
+    image: 'https://bulma.io/images/placeholders/1280x960.png',
   },
   {
     id: 8,
     title: 'Electronics',
-    image: '',
+    image: 'https://bulma.io/images/placeholders/1280x960.png',
   },
 ];
 
