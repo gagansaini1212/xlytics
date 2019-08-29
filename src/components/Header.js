@@ -1,7 +1,8 @@
+/* eslint global-require: 0 */
+
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import SmoothScroll from 'smooth-scroll';
 
 const Section = styled.section`
   padding: 1rem 1.5rem;
@@ -33,7 +34,10 @@ export default class Header extends React.Component {
   }
 
   componentDidMount() {
-    const scroll = new SmoothScroll('a[href*="#"]');
+    if (typeof window !== `undefined`) {
+      const SmoothScroll = require('smooth-scroll');
+      const scroll = new SmoothScroll('a[href*="#"]');
+    }
   }
 
   handleMobileMenu() {
