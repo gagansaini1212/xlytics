@@ -54,6 +54,7 @@ export default class Header extends React.Component {
                 <img src="/images/packrs-logo.png" alt="Packrs logo" />
               </Link>
               <a
+                href="#"
                 role="button"
                 className={
                   isActive
