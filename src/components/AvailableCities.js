@@ -8,7 +8,7 @@ const Section = styled.section`
   padding: 5rem 1.5rem;
   h2.title {
     margin-bottom: 3.2rem;
-    color: ${props => props.theme.lightShades};
+    color: ${props => props.theme.lightShades} !important;
   }
   .city {
     :hover {

@@ -48,6 +48,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: ${theme.secondaryFontFamily};
+    color: ${theme.textColor};
   }
   .title {
     font-family: ${theme.primaryFontFamily};
@@ -57,6 +58,9 @@ const GlobalStyle = createGlobalStyle`
   }
   p {
     line-height: 1.5rem;
+  }
+  p, .title, .box {
+    color: ${theme.textColor} !important;
   }
   .button.is-primary {
     background-color: ${theme.mainBrandColor};

@@ -6,15 +6,18 @@ import config from '../utils/config';
 
 const Section = styled.section`
   background-color: ${props => props.theme.darkShades};
-  color: ${props => props.theme.lightShades};
+  color: ${props => props.theme.lightShades} !important;
   .title {
-    color: ${props => props.theme.lightShades};
+    color: ${props => props.theme.lightShades} !important;
   }
   .footer {
     background-color: ${props => props.theme.darkShades};
     padding: 3rem 1.5rem 3rem;
     .content {
       margin-top: 3rem;
+      p {
+        color: ${props => props.theme.lightShades} !important;
+      }
     }
   }
   ul {
