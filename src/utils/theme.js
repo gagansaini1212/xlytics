@@ -50,7 +50,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${theme.secondaryFontFamily};
   }
   .button {
-    box-shadow: ${theme.boxShadow};
     .is-primary {
       background-color: ${theme.mainBrandColor};
       transition: background-color 0.2s ease;
@@ -59,7 +58,7 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
-  .input {
+  .button, .input, .card {
     box-shadow: ${theme.boxShadow};
   }
 `;

@@ -12,7 +12,9 @@ const Section = styled.section`
 const Categories = () => (
   <Section className="section">
     <div className="container">
-      <h2 className="title has-text-centered">What you can get from Packrs?</h2>
+      <h2 className="title has-text-centered has-text-weight-bold">
+        What you can get from Packrs?
+      </h2>
       <div className="columns is-multiline">
         <CategoryItem />
         <CategoryItem />

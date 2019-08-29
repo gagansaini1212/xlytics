@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import config from '../utils/config';
 import Seo from '../components/Seo';
@@ -23,8 +22,8 @@ export default class IndexPage extends React.Component {
         />
         <HomeHero />
         <Categories />
-        <HowWeWork />
         <AboutApp />
+        <HowWeWork />
         <Partners />
         <Reviews />
       </Layout>
