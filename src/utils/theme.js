@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
+import { darken } from 'polished';
 
 const mainBrandColor = '#33B760';
 const lightShades = '#F9F9F9';
@@ -39,6 +40,7 @@ export const theme = {
   menuTintColor: darkAccent,
   primaryFontFamily: "'Nunito', sans-serif",
   secondaryFontFamily: "'Open Sans', sans-serif",
+  boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -47,8 +49,18 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${theme.secondaryFontFamily};
   }
-  .button.is-primary {
-    background-color: ${theme.mainBrandColor};
+  .button {
+    box-shadow: ${theme.boxShadow};
+    .is-primary {
+      background-color: ${theme.mainBrandColor};
+      transition: background-color 0.2s ease;
+      :hover {
+        background-color: ${darken(0.06, theme.mainBrandColor)};
+      }
+    }
+  }
+  .input {
+    box-shadow: ${theme.boxShadow};
   }
 `;
 

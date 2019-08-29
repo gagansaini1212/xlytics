@@ -1,28 +1,51 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Section = styled.section`
+  .title {
+    font-size: 3.4rem;
+    font-weight: 700;
+  }
+  .subtitle {
+    font-size: 3.4rem;
+  }
+`;
+const HelpText = styled.p`
+  margin-top: 1.5rem;
+`;
 
 const HomeHero = () => (
-  <section className="section">
+  <Section className="section">
     <div className="container">
-      <section className="hero is-medium">
-        <div className="hero-body">
-          <div className="container">
-            <h1 className="title">Medium title</h1>
-            <h2 className="subtitle">Medium subtitle</h2>
-            <div className="field">
-              <div className="control">
-                <input
-                  className="input is-large"
-                  type="text"
-                  placeholder="Large input"
-                />
+      <div className="columns">
+        <div className="column is-half">
+          <section className="hero is-medium">
+            <div className="hero-body">
+              <h1 className="title is-1">
+                Get anything from anywhere want to be.
+              </h1>
+              <h2 className="subtitle is-1">{`It\'s in your hand.`}</h2>
+              <div className="field is-grouped">
+                <p className="control is-expanded">
+                  <input
+                    className="input is-medium"
+                    type="text"
+                    placeholder="Your mobile number"
+                  />
+                </p>
+                <p className="control">
+                  <a className="button is-primary is-medium">Text me a link</a>
+                </p>
               </div>
+              <HelpText>
+                We’ll send you a text with a link to download the app.
+              </HelpText>
             </div>
-            <a className="button is-primary">Primary</a>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
     </div>
-  </section>
+  </Section>
 );
 
 export default HomeHero;
