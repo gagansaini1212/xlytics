@@ -15,7 +15,7 @@ const Container = styled.div`
   }
 `;
 
-const CategoryItem = ({ title }) => (
+const CategoryItem = ({ item }) => (
   <Container className="column is-one-quarter">
     <figure className="image is-96x96">
       <img
@@ -25,7 +25,7 @@ const CategoryItem = ({ title }) => (
       />
     </figure>
     <h5 className="has-text-centered has-text-weight-semibold is-size-5">
-      {title}
+      {item.title}
     </h5>
   </Container>
 );

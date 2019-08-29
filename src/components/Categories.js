@@ -9,6 +9,49 @@ const Section = styled.section`
   }
 `;
 
+const categories = [
+  {
+    id: 1,
+    title: 'Pick n Drop',
+    image: '',
+  },
+  {
+    id: 2,
+    title: 'Food & Drinks',
+    image: '',
+  },
+  {
+    id: 3,
+    title: 'Groceries',
+    image: '',
+  },
+  {
+    id: 4,
+    title: 'Fruit & Veg',
+    image: '',
+  },
+  {
+    id: 5,
+    title: 'Meet & Fish',
+    image: '',
+  },
+  {
+    id: 6,
+    title: 'Pharmacy',
+    image: '',
+  },
+  {
+    id: 7,
+    title: 'Gifts & Stationary',
+    image: '',
+  },
+  {
+    id: 8,
+    title: 'Electronics',
+    image: '',
+  },
+];
+
 const Categories = () => (
   <Section className="section">
     <div className="container">
@@ -16,14 +59,9 @@ const Categories = () => (
         What you can get from Packrs?
       </h2>
       <div className="columns is-multiline">
-        <CategoryItem title="Pick n Drop" />
-        <CategoryItem title="Food & Drinks" />
-        <CategoryItem title="Groceries" />
-        <CategoryItem title="Fruit & Veg" />
-        <CategoryItem title="Meet & Fish" />
-        <CategoryItem title="Pharmacy" />
-        <CategoryItem title="Gifts & Stationary" />
-        <CategoryItem title="Electronics" />
+        {categories.map(item => (
+          <CategoryItem key={item.id} item={item} />
+        ))}
       </div>
     </div>
   </Section>

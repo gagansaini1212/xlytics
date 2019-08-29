@@ -5,6 +5,19 @@ import styled from 'styled-components';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+const slides = [
+  {
+    id: 1,
+    title: 'screen 1',
+    image: 'https://bulma.io/images/placeholders/1280x960.png',
+  },
+  {
+    id: 2,
+    title: 'screen 2',
+    image: 'https://bulma.io/images/placeholders/1280x960.png',
+  },
+];
+
 const Section = styled.section`
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -51,22 +64,13 @@ const AboutApp = () => {
           Using Packrs
         </h2>
         <Slider {...settings}>
-          <div>
-            <Slide>
-              <Image
-                src="https://bulma.io/images/placeholders/1280x960.png"
-                alt="Placeholder "
-              />
-            </Slide>
-          </div>
-          <div>
-            <Slide>
-              <Image
-                src="https://bulma.io/images/placeholders/1280x960.png"
-                alt="Placeholder "
-              />
-            </Slide>
-          </div>
+          {slides.map(item => (
+            <div key={item.id}>
+              <Slide>
+                <Image src={item.image} alt={item.title} />
+              </Slide>
+            </div>
+          ))}
         </Slider>
       </div>
     </Section>
