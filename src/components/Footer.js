@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import config from '../utils/config';
+
 const Section = styled.section`
   background-color: ${props => props.theme.darkShades};
   color: ${props => props.theme.lightShades};
@@ -51,10 +53,10 @@ const Footer = () => (
           <div className="column">
             <h4 className="title is-4">Download The App</h4>
             <StoreContainer>
-              <a href="#">
+              <a href={config.iosStore}>
                 <img src="/images/store-ios.png" alt="Packrs ios store" />
               </a>
-              <a href="#">
+              <a href={config.androidStore}>
                 <img
                   src="/images/store-android.png"
                   alt="Packrs android store"
@@ -126,7 +128,7 @@ const Footer = () => (
               <Icons className="has-text-right">
                 <a
                   target="_blank"
-                  href="https://www.facebook.com/PackrsOfficial/?modal=admin_todo_tour"
+                  href={config.facebook}
                   rel="noopener noreferrer"
                 >
                   <span className="icon has-text-info">
@@ -135,7 +137,7 @@ const Footer = () => (
                 </a>
                 <a
                   target="_blank"
-                  href="https://www.instagram.com/packrs_official/"
+                  href={config.instagram}
                   rel="noopener noreferrer"
                 >
                   <span className="icon has-text-info">
@@ -144,14 +146,18 @@ const Footer = () => (
                 </a>
                 <a
                   target="_blank"
-                  href="https://twitter.com/PackrsOfficial"
+                  href={config.twitter}
                   rel="noopener noreferrer"
                 >
                   <span className="icon has-text-info">
                     <i className="fab fa-twitter-square" />
                   </span>
                 </a>
-                <a target="_blank" href="/">
+                <a
+                  target="_blank"
+                  href={config.linkedin}
+                  rel="noopener noreferrer"
+                >
                   <span className="icon has-text-info">
                     <i className="fab fa-linkedin" />
                   </span>

@@ -21,7 +21,7 @@ const AvailableCities = () => (
   <Section className="section">
     <div className="container">
       <h2 className="title is-2 has-text-centered has-text-weight-bold">
-        Available Cities{' '}
+        Available at{' '}
         <span role="img" aria-label="Map pin">
           📍
         </span>

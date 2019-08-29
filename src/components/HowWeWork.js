@@ -13,7 +13,7 @@ const HowWeWork = () => (
   <Section className="section">
     <div className="container">
       <h2 className="title is-2 has-text-centered has-text-weight-bold">
-        Our deliveries process
+        Our delivery process
       </h2>
       <div className="columns is-multiline">
         <HowWeWorkItem title="Any product you love" />

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import config from '../utils/config';
+
 const Section = styled.section`
   .title {
     font-size: 3.4rem;
@@ -50,10 +52,10 @@ const HomeHero = () => (
                 We’ll send you a text with a link to download the app.
               </HelpText>
               <StoreContainer>
-                <a href="#">
+                <a href={config.iosStore}>
                   <img src="/images/store-ios.png" alt="Packrs ios store" />
                 </a>
-                <a href="#">
+                <a href={config.androidStore}>
                   <img
                     src="/images/store-android.png"
                     alt="Packrs android store"

@@ -9,7 +9,7 @@ const Section = styled.section`
 `;
 
 const Partners = () => (
-  <Section className="section">
+  <Section className="section" id="partners">
     <div className="container">
       <div className="columns">
         <PartnerItem title="Become a Rider" />

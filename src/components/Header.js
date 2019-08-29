@@ -31,7 +31,7 @@ export default class Header extends React.Component {
     };
   }
 
-  MobileMenu() {
+  handleMobileMenu() {
     const { isActive } = this.state;
 
     this.setState({
@@ -64,7 +64,7 @@ export default class Header extends React.Component {
                 aria-label="menu"
                 aria-expanded="false"
                 data-target="navbarBasicExample"
-                onClick={() => this.MobileMenu()}
+                onClick={() => this.handleMobileMenu()}
               >
                 <span aria-hidden="true" />
                 <span aria-hidden="true" />
@@ -76,20 +76,20 @@ export default class Header extends React.Component {
                 <Link to="/" className="navbar-item">
                   Home
                 </Link>
-                <Link to="/" className="navbar-item">
+                <Link to="/about" className="navbar-item">
                   About
                 </Link>
-                <Link to="/" className="navbar-item">
+                <Link to="/support" className="navbar-item">
                   Support
                 </Link>
               </div>
               <div className="navbar-end">
                 <div className="navbar-item">
                   <div className="buttons is-hidden-mobile">
-                    <Link to="/" className="button is-primary">
+                    <Link to="/#partners" className="button is-primary">
                       <strong>Become a Rider</strong>
                     </Link>
-                    <Link to="/" className="button is-light">
+                    <Link to="/#partners" className="button is-light">
                       Become a Partner
                     </Link>
                   </div>

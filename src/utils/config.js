@@ -10,8 +10,9 @@ module.exports = {
   twitter: 'https://twitter.com/PackrsOfficial',
   facebook: 'https://www.facebook.com/PackrsOfficial',
   instagram: 'https://www.instagram.com/packrs_official',
-  fbUserId: '@NAME-HERE',
-  fbAppID: '@NAME-HERE',
+  linkedin: 'https://www.linkedin.com/company/packrs/',
+  androidStore: 'https://play.google.com/store/apps/details?id=com.packrs',
+  iosStore: 'https://apps.apple.com/us/app/packrs/id1474759357?ls=1',
 
   type: 'website',
   googleAnalytics: 'UA-1390187-42',
