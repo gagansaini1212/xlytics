@@ -28,22 +28,42 @@ const AvailableCities = () => (
       </h2>
       <div className="columns has-text-centered">
         <div className="column">
-          <a href="" className="city is-size-5">
+          <a
+            href="https://www.google.com/maps/place/31.322393,75.5383999"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="city is-size-5"
+          >
             Jalandhar
           </a>
         </div>
         <div className="column">
-          <a href="" className="city is-size-5">
+          <a
+            href="https://www.google.com/maps/place/30.9003405,75.8216539"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="city is-size-5"
+          >
             Ludhiana
           </a>
         </div>
         <div className="column">
-          <a href="" className="city is-size-5">
+          <a
+            href="https://www.google.com/maps/place/30.7350767,76.7285096"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="city is-size-5"
+          >
             Chandigarh
           </a>
         </div>
         <div className="column">
-          <a href="" className="city is-size-5">
+          <a
+            href="https://www.google.com/maps/place/31.6335394,74.835101"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="city is-size-5"
+          >
             Amritsar
           </a>
         </div>

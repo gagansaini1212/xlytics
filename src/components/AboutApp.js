@@ -61,7 +61,7 @@ const AboutApp = () => {
     <Section className="section">
       <div className="container">
         <h2 className="title is-2 has-text-centered has-text-weight-bold">
-          Using Packrs
+          Have you got the Packrs?
         </h2>
         <Slider {...settings}>
           {slides.map(item => (

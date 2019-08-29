@@ -55,6 +55,9 @@ const GlobalStyle = createGlobalStyle`
   .button {
     font-family: ${theme.primaryFontFamily};
   }
+  p {
+    line-height: 1.5rem;
+  }
   .button.is-primary {
     background-color: ${theme.mainBrandColor};
     transition: background-color 0.2s ease;

@@ -13,7 +13,7 @@ const items = [
     id: 1,
     title: 'Become a Rider',
     details:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.',
+      'Become a rider and enjoy the freedom to fit work around your life. Plus great fees, perks and discounts.',
     image: 'https://bulma.io/images/placeholders/1280x960.png',
     link: 'https://airtable.com/shrNYyLynebosW850',
   },
@@ -21,7 +21,7 @@ const items = [
     id: 2,
     title: 'Become a Partner',
     details:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.',
+      'Partner with Packrs and reach more customers than ever. We handle delivery, so you can focus on the business.',
     image: 'https://bulma.io/images/placeholders/1280x960.png',
     link: 'https://airtable.com/shrzgjKLLyiwUVRA0',
   },

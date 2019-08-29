@@ -34,9 +34,9 @@ const HomeHero = () => (
           <section className="hero is-medium">
             <div className="hero-body">
               <h1 className="title is-1">
-                Get anything from anywhere want to be.
+                Get anything from anywhere you want.
               </h1>
-              <h2 className="subtitle is-1">{`It\'s in your hand.`}</h2>
+              <h2 className="subtitle is-1">It will be in your hand.</h2>
               <DownloadAppForm />
               <HelpText>
                 We’ll send you a text with a link to download the app.

@@ -154,8 +154,8 @@ const Footer = () => (
           <div className="columns">
             <div className="column">
               <p>
-                Copyright ©2019 <a href="https://www.packrs.co">Packrs</a> |
-                Made with ❤️ in Punjab, India, and on the Internet.
+                © 2019 <a href="https://www.packrs.co">Packrs</a> | Made with ❤️
+                in Punjab, India, and on the Internet.
               </p>
             </div>
             <div className="column">
