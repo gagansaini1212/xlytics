@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import SmoothScroll from 'smooth-scroll';
 
 const Section = styled.section`
   padding: 1rem 1.5rem;
@@ -29,6 +30,10 @@ export default class Header extends React.Component {
     this.state = {
       isActive: false,
     };
+  }
+
+  componentDidMount() {
+    const scroll = new SmoothScroll('a[href*="#"]');
   }
 
   handleMobileMenu() {
@@ -86,12 +91,20 @@ export default class Header extends React.Component {
               <div className="navbar-end">
                 <div className="navbar-item">
                   <div className="buttons is-hidden-mobile">
-                    <Link to="/#partners" className="button is-primary">
+                    <a
+                      data-scroll
+                      href="/#partners"
+                      className="button is-primary"
+                    >
                       <strong>Become a Rider</strong>
-                    </Link>
-                    <Link to="/#partners" className="button is-light">
+                    </a>
+                    <a
+                      data-scroll
+                      href="/#partners"
+                      className="button is-light"
+                    >
                       Become a Partner
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

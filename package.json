@@ -45,6 +45,7 @@
     "react-helmet": "^5.2.0",
     "react-slick": "^0.25.2",
     "slick-carousel": "^1.8.1",
+    "smooth-scroll": "^16.1.0",
     "styled-components": "^4.2.0",
     "styled-reset-advanced": "^1.0.1",
     "sweetalert": "^2.1.2",
