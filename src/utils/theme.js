@@ -37,14 +37,19 @@ export const theme = {
   textColorInverse: lightShades,
   textColorLite: '#8B8989',
   menuTintColor: darkAccent,
-  primaryFontFamily: 'Nunito',
-  secondaryFontFamily: 'OpenSans',
+  primaryFontFamily: "'Nunito', sans-serif",
+  secondaryFontFamily: "'Open Sans', sans-serif",
 };
 
 const GlobalStyle = createGlobalStyle`
   ${reset};
 
-  body {}
+  body {
+    font-family: ${theme.secondaryFontFamily};
+  }
+  .button.is-primary {
+    background-color: ${theme.mainBrandColor};
+  }
 `;
 
 export default GlobalStyle;

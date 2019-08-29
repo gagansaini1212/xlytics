@@ -1,15 +1,29 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Link } from 'gatsby';
 
+const Section = styled.section`
+  padding: 1rem 1.5rem;
+  font-family: ${props => props.theme.primaryFontFamily};
+  .navbar-brand {
+    margin-right: 20px;
+    .navbar-item img {
+      max-height: 2.75rem;
+    }
+  }
+  .navbar-item {
+    font-weight: 700;
+  }
+`;
+
 const Header = () => (
-  <section className="section">
+  <Section className="section">
     <div className="container">
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <a className="navbar-item" href="https://bulma.io">
-            <img src="/images/packrs-logo.png" />
-          </a>
-
+          <Link className="navbar-item" to="/">
+            <img src="/images/packrs-logo.png" alt="Packrs logo" />
+          </Link>
           <a
             role="button"
             className="navbar-burger burger"
@@ -22,27 +36,26 @@ const Header = () => (
             <span aria-hidden="true" />
           </a>
         </div>
-
-        <div id="navbarBasicExample" className="navbar-menu">
+        <div className="navbar-menu">
           <div className="navbar-start">
-            <a className="navbar-item">Home</a>
-            <a className="navbar-item">About</a>
-            <a className="navbar-item">Support</a>
+            <Link className="navbar-item">Home</Link>
+            <Link className="navbar-item">About</Link>
+            <Link className="navbar-item">Support</Link>
           </div>
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">
-                <a className="button is-primary">
+                <Link className="button is-primary">
                   <strong>Become a Rider</strong>
-                </a>
-                <a className="button is-light">Become a Partner</a>
+                </Link>
+                <Link className="button is-light">Become a Partner</Link>
               </div>
             </div>
           </div>
         </div>
       </nav>
     </div>
-  </section>
+  </Section>
 );
 
 export default Header;

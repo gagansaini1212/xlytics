@@ -24,6 +24,10 @@ export default class HTML extends React.Component {
             defer
             src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
           />
+          <link
+            href="https://fonts.googleapis.com/css?family=Nunito:400,600,700|Open+Sans:400,600,700&display=swap"
+            rel="stylesheet"
+          />
           {/* Add custom css or scripts here */}
 
           {this.props.headComponents}
