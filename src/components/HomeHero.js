@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import config from '../utils/config';
+import DownloadAppForm from './DownloadAppForm';
 
 const Section = styled.section`
   .title {
@@ -36,18 +37,7 @@ const HomeHero = () => (
                 Get anything from anywhere want to be.
               </h1>
               <h2 className="subtitle is-1">{`It\'s in your hand.`}</h2>
-              <div className="field is-grouped">
-                <p className="control is-expanded">
-                  <input
-                    className="input is-medium"
-                    type="text"
-                    placeholder="Your mobile number"
-                  />
-                </p>
-                <p className="control">
-                  <a className="button is-primary is-medium">Text me a link</a>
-                </p>
-              </div>
+              <DownloadAppForm />
               <HelpText>
                 We’ll send you a text with a link to download the app.
               </HelpText>

@@ -28,6 +28,7 @@ export default class HTML extends React.Component {
             href="https://fonts.googleapis.com/css?family=Nunito:400,600,700|Open+Sans:400,600,700&display=swap"
             rel="stylesheet"
           />
+          <script src="/js/scripts.js" />
           {/* Add custom css or scripts here */}
 
           {this.props.headComponents}

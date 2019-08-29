@@ -26,6 +26,7 @@
     "apollo-client": "^2.6.4",
     "apollo-link-context": "^1.0.18",
     "apollo-link-http": "^1.5.15",
+    "formik": "^1.5.8",
     "gatsby": "^2.3.3",
     "gatsby-image": "^2.0.35",
     "gatsby-plugin-google-analytics": "^2.0.18",
@@ -35,6 +36,7 @@
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.11",
     "gatsby-plugin-styled-components": "^3.0.7",
+    "graphql-tag": "^2.10.1",
     "isomorphic-unfetch": "^3.0.0",
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
@@ -44,7 +46,9 @@
     "react-slick": "^0.25.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.2.0",
-    "styled-reset-advanced": "^1.0.1"
+    "styled-reset-advanced": "^1.0.1",
+    "sweetalert": "^2.1.2",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",

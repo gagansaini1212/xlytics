@@ -6,6 +6,7 @@ module.exports = {
   description: 'A delivery platform for anything',
   siteUrl: 'https://www.packrs.co/',
   image: '/images/packrs-poster.png',
+  graphqlUri: 'https://packrs-api.now.sh/graphql',
 
   twitter: 'https://twitter.com/PackrsOfficial',
   facebook: 'https://www.facebook.com/PackrsOfficial',
