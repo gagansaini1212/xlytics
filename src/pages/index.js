@@ -26,8 +26,8 @@ export default class IndexPage extends React.Component {
     return (
       <Layout hideHeader>
         <Seo
-          title="Packrs"
-          description="Deliver anything, anywhere, anytime"
+          title="Deliver anything, anywhere, anytime"
+          description="Packrs Delivery"
           url={config.siteUrl}
           image={config.image}
         />
