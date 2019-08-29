@@ -52,6 +52,9 @@ const GlobalStyle = createGlobalStyle`
   .title {
     font-family: ${theme.primaryFontFamily};
   }
+  button {
+    font-family: ${theme.primaryFontFamily};
+  }
   .button.is-primary {
     background-color: ${theme.mainBrandColor};
     transition: background-color 0.2s ease;
