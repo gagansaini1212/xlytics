@@ -95,20 +95,12 @@ export default class Header extends React.Component {
               <div className="navbar-end">
                 <div className="navbar-item">
                   <div className="buttons is-hidden-mobile">
-                    <a
-                      data-scroll
-                      href="/#partners"
-                      className="button is-primary"
-                    >
+                    <Link to="/partner" className="button is-primary">
                       <strong>Become a Rider</strong>
-                    </a>
-                    <a
-                      data-scroll
-                      href="/#partners"
-                      className="button is-light"
-                    >
+                    </Link>
+                    <Link to="/business" className="button is-light">
                       Become a Partner
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

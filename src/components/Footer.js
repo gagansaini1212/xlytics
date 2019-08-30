@@ -124,31 +124,13 @@ const Footer = () => (
                 </a>
               </li>
               <li>
-                <a
-                  href="https://airtable.com/shrzgjKLLyiwUVRA0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Apply as Business
-                </a>
+                <Link to="/business">Apply as Business</Link>
               </li>
               <li>
-                <a
-                  href="https://airtable.com/shrNYyLynebosW850"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Apply as Delivery Partners
-                </a>
+                <Link to="/partner">Apply as Rider</Link>
               </li>
               <li>
-                <a
-                  href="https://packrs.freshdesk.com/support/tickets/new"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Contact Us
-                </a>
+                <a href="mailto:hi@packrs.co">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -197,6 +179,11 @@ const Footer = () => (
                 >
                   <span className="icon has-text-info">
                     <i className="fab fa-linkedin" />
+                  </span>
+                </a>
+                <a href="mailto:hi@packrs.co">
+                  <span className="icon has-text-info">
+                    <i className="fas fa-envelope" />
                   </span>
                 </a>
               </Icons>

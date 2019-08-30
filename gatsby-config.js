@@ -17,12 +17,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-mailchimp`,
-      options: {
-        endpoint: config.mailchimpUrl,
-      },
-    },
-    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
