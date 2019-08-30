@@ -25,41 +25,41 @@ const items = [
     title: 'Choose when to work',
     details:
       'You’ll be self-employed and free to work to your own availability. The Packrs rider app makes it easy to plan ahead.',
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    icon: 'fas fa-clock',
   },
   {
     id: 2,
     title: 'Deliver with ease',
     details:
       "Know where you're going, and when to get there. Earn more with weekly guarantees and keep 100% of the tips you receive.",
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    icon: 'fas fa-map-marked-alt',
   },
   {
     id: 3,
     title: 'Clear earnings, instant deposits',
     details:
       'See how much you earned after each delivery and exactly how your earnings were calculated. Get free weekly deposits or cash out instantly anytime you want.',
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    icon: 'fas fa-coins',
   },
   {
     id: 4,
     title: 'All the tools you need',
     details:
       'Sign up and we’ll send you a free delivery bag and prepaid card so you can deliver food, drinks, retail, and more—from anywhere in your city—literally.',
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    icon: 'fas fa-toolbox',
   },
   {
     id: 5,
     title: 'You will need',
     details:
       'A grin from ear to ear, your vehicle (motorcycle, bike or car), an iPhone or Android device and you must be 18+.',
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    icon: 'fas fa-motorcycle',
   },
   {
     id: 6,
     title: 'Your ride. Your city',
     details: 'All deliveries will be within the city limits.',
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    icon: 'fas fa-city',
   },
 ];
 

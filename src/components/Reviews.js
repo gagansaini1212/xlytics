@@ -13,17 +13,17 @@ const items = [
     id: 1,
     personName: 'John Smith',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum laoreet lectus, et efficitur sapien. Maecenas porttitor interdum mattis. Sed risus justo, euismod id vehicula in, pellentesque in turpis. Vestibulum semper, turpis sed commodo molestie, nisi urna facilisis eros, vitae eleifend elit odio eu ex.',
+      "Very Good App!!! just arrived in my hotel in Chandigarh and starving. didn't want leave hotel so I ordered for delivery using this app. Plus, I forgot my phone charger at home, Packrs delivered even phone charger to me.",
     handle: '@johnsmith',
-    image: 'https://bulma.io/images/placeholders/96x96.png',
+    image: '/images/reviews/gurkaran.jpg',
   },
   {
     id: 2,
-    personName: 'John Smith',
+    personName: 'Anushkha',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum laoreet lectus, et efficitur sapien. Maecenas porttitor interdum mattis. Sed risus justo, euismod id vehicula in, pellentesque in turpis. Vestibulum semper, turpis sed commodo molestie, nisi urna facilisis eros, vitae eleifend elit odio eu ex.',
-    handle: '@johnsmith',
-    image: 'https://bulma.io/images/placeholders/96x96.png',
+      'A good app and company, they do their best to make sure you get your order or are compensated fairly. If anything is missing or wrong definitely contact them, they are usually fast to fix the issue.',
+    handle: '@anushkha',
+    image: '/images/reviews/samar.jpg',
   },
 ];
 

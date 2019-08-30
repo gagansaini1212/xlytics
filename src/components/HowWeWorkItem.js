@@ -8,14 +8,19 @@ const Box = styled.div`
   }
 `;
 
+const Icon = styled.div`
+  font-size: 68px;
+  color: ${props => props.theme.lightAccent};
+`;
+
 const CategoryItem = ({ item }) => (
   <div className="column is-half">
     <Box className="box">
       <article className="media">
         <div className="media-left">
-          <figure className="image is-128x128">
-            <img src={item.image} alt={item.title} />
-          </figure>
+          <Icon>
+            <i className={item.icon} />
+          </Icon>
         </div>
         <div className="media-content">
           <div className="content">

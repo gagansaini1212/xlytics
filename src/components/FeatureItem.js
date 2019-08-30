@@ -19,11 +19,18 @@ const Container = styled.div`
   }
 `;
 
+const Icon = styled.div`
+  text-align: center;
+  font-size: 68px;
+  margin-bottom: 1rem;
+  color: ${props => props.theme.darkAccent};
+`;
+
 const FeatureItem = ({ item }) => (
   <Container className="column is-one-third">
-    <figure className="image is-96x96">
-      <img className="is-rounded" src={item.image} alt={item.title} />
-    </figure>
+    <Icon>
+      <i className={item.icon} />
+    </Icon>
     <h5 className="has-text-centered has-text-weight-semibold is-size-5">
       {item.title}
     </h5>

@@ -1,9 +1,14 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import NewsItem from '../components/NewsItem';
+
+const Container = styled.div`
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+`;
 
 const NewsUpdates = ({ data }) => {
   const { edges: posts } = data.allMdx;
@@ -11,7 +16,7 @@ const NewsUpdates = ({ data }) => {
   return (
     <Layout>
       <Helmet title="News & Updates" />
-      <div className="container">
+      <Container className="container">
         <h2 className="title is-2 has-text-centered has-text-weight-bold">
           News & Updates
         </h2>
@@ -22,7 +27,7 @@ const NewsUpdates = ({ data }) => {
             ))}
           </div>
         </div>
-      </div>
+      </Container>
     </Layout>
   );
 };

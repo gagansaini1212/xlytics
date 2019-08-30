@@ -7,6 +7,10 @@ const Section = styled.section`
   h2.title {
     margin-bottom: 3.2rem;
   }
+  .media-left {
+    min-width: 78px;
+    text-align: center;
+  }
 `;
 
 const items = [
@@ -14,25 +18,25 @@ const items = [
     id: 1,
     title: 'Any product you love',
     details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: 'https://bulma.io/images/placeholders/128x128.png',
+    icon: 'fas fa-stopwatch',
   },
   {
     id: 2,
     title: '45 mins delivery',
     details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: 'https://bulma.io/images/placeholders/128x128.png',
+    icon: 'fas fa-map-marked-alt',
   },
   {
     id: 3,
     title: 'Save time & money',
     details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: 'https://bulma.io/images/placeholders/128x128.png',
+    icon: 'fas fa-piggy-bank',
   },
   {
     id: 4,
     title: 'Earn cash and free deliveries',
     details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: 'https://bulma.io/images/placeholders/128x128.png',
+    icon: 'fas fa-gift',
   },
 ];
 

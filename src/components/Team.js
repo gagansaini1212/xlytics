@@ -16,31 +16,37 @@ const team = [
     id: 1,
     title: 'Perminder Klair',
     subtitle: 'Founder & CEO',
-    image: './images/perminder.jpeg',
+    image: '/images/team/perminder.jpeg',
   },
   {
     id: 2,
     title: 'Nasim Akthar',
     subtitle: 'Lead Developer',
-    image: './images/nasim.jpeg',
+    image: '/images/team/nasim.jpeg',
   },
   {
     id: 3,
     title: 'Gagan Saini',
     subtitle: 'Front-End Developer',
-    image: './images/gagan.jpeg',
+    image: '/images/team/gagan.jpeg',
   },
   {
     id: 4,
     title: 'Balwinder Klair',
     subtitle: 'Marketing Strategist',
-    image: './images/balwinder.jpg',
+    image: '/images/team/balwinder.jpg',
   },
   {
     id: 5,
     title: 'Sourav Arya',
     subtitle: 'Manager',
-    image: './images/sourav.jpg',
+    image: '/images/team/sourav.jpg',
+  },
+  {
+    id: 5,
+    title: 'Simranpreet Baweja',
+    subtitle: 'Advisor',
+    image: '/images/team/simran.jpg',
   },
 ];
 

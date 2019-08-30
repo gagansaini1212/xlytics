@@ -17,9 +17,9 @@ const Container = styled.div`
 
 const CategoryItem = ({ item }) => (
   <Container className="column is-one-quarter">
-    <figure className="image is-96x96">
+    {/* <figure className="image is-96x96">
       <img className="is-rounded" src={item.image} alt={item.title} />
-    </figure>
+    </figure> */}
     <h5 className="has-text-centered has-text-weight-semibold is-size-5">
       {item.title}
     </h5>
