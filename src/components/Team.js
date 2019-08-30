@@ -6,44 +6,41 @@ import TeamMember from './TeamMember';
 const Section = styled.section`
   margin-top: 4rem;
   margin-bottom: 4rem;
+  .title {
+    margin-bottom: 2rem;
+  }
 `;
 
 const team = [
   {
     id: 1,
-    title: 'Nasim',
-    subtitle: 'ceo',
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    title: 'Perminder Klair',
+    subtitle: 'Founder & CEO',
+    image: './images/perminder.jpeg',
   },
   {
     id: 2,
-    title: 'Nasim',
-    subtitle: 'ceo',
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    title: 'Nasim Akthar',
+    subtitle: 'Lead Developer',
+    image: './images/nasim.jpeg',
   },
   {
     id: 3,
-    title: 'Groceries',
-    subtitle: 'ceo',
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    title: 'Gagan Saini',
+    subtitle: 'Front-End Developer',
+    image: './images/gagan.jpeg',
   },
   {
     id: 4,
-    title: 'Nasim',
-    subtitle: 'ceo',
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    title: 'Balwinder Klair',
+    subtitle: 'Marketing Strategist',
+    image: './images/balwinder.jpg',
   },
   {
     id: 5,
-    title: 'Nasim',
-    subtitle: 'ceo',
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
-  },
-  {
-    id: 6,
-    title: 'Nasim',
-    subtitle: 'ceo',
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    title: 'Sourav Arya',
+    subtitle: 'Manager',
+    image: './images/sourav.jpg',
   },
 ];
 

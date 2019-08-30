@@ -19,6 +19,9 @@ const HelpText = styled.p`
 
 const StoreContainer = styled.div`
   margin-top: 3rem;
+  @media screen and (max-width: 600px) {
+    display: flex;
+  }
   img {
     margin-right: 10px;
     width: auto;
@@ -33,10 +36,12 @@ const HomeHero = () => (
         <div className="column is-half">
           <section className="hero is-medium">
             <div className="hero-body">
-              <h1 className="title is-1">
+              <h1 className="title is-size-3-mobile">
                 Get anything from anywhere you want.
               </h1>
-              <h2 className="subtitle is-1">It will be in your hand.</h2>
+              <h2 className="subtitle is-1 is-size-4-mobile">
+                It will be in your hand.
+              </h2>
               <DownloadAppForm />
               <HelpText>
                 We’ll send you a text with a link to download the app.
