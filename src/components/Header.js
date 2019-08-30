@@ -16,6 +16,11 @@ const Section = styled.section`
       max-height: 2.75rem;
     }
   }
+  .navbar-menu {
+    position: absolute;
+    width: 100%;
+    transition: 0.6s;
+  }
   .navbar-item {
     font-weight: 700;
     :hover {
