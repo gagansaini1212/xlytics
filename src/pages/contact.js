@@ -13,8 +13,10 @@ const Section = styled.div`
     margin: 0rem auto;
     object-position: center;
   }
-  .button:active {
-    border-color: none;
+  .button {
+    :active {
+      border-color: transparent;
+    }
   }
 `;
 
