@@ -68,7 +68,7 @@ const Contact = () => (
           </div>
 
           <div className="column">
-            <img className="image" src="/images/contact.jpg" alt="box" />
+            <img className="image" src="/images/contact-1.jpg" alt="delivery box" />
           </div>
         </div>
       </div>
