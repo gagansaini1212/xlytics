@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Card = styled.div`
   a {
@@ -28,7 +29,7 @@ const PartnerItem = ({ item }) => (
         <div className="content">
           <h3 className="title is-4">{item.title}</h3>
           <p className="is-size-6">{item.details}</p>
-          <a className="button is-link" href={item.link}>
+          <Link className="button is-link" to={item.link}>
             Find out more
             <span
               className="icon is-small"
@@ -37,7 +38,7 @@ const PartnerItem = ({ item }) => (
             >
               👉
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </Card>

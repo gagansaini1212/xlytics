@@ -15,7 +15,7 @@ const items = [
     details:
       'Become a rider and enjoy the freedom to fit work around your life. Plus great fees, perks and discounts.',
     image: 'https://bulma.io/images/placeholders/1280x960.png',
-    link: 'https://airtable.com/shrNYyLynebosW850',
+    link: '/partner',
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const items = [
     details:
       'Partner with Packrs and reach more customers than ever. We handle delivery, so you can focus on the business.',
     image: 'https://bulma.io/images/placeholders/1280x960.png',
-    link: 'https://airtable.com/shrzgjKLLyiwUVRA0',
+    link: '/business',
   },
 ];
 

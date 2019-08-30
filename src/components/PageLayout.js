@@ -27,16 +27,20 @@ export default function PageTemplate({ children }) {
   return (
     <Layout>
       <Container className="container">
-        <MDXProvider
-          components={{
-            h1: props => <h1 className="title is-1" {...props} />,
-            h2: props => <h2 className="title is-2" {...props} />,
-            h3: props => <h3 className="title is-3" {...props} />,
-            p: props => <p className="" {...props} />,
-          }}
-        >
-          {children}
-        </MDXProvider>
+        <div className="columns is-centered">
+          <div className="column is-four-fifths">
+            <MDXProvider
+              components={{
+                h1: props => <h1 className="title is-1" {...props} />,
+                h2: props => <h2 className="title is-2" {...props} />,
+                h3: props => <h3 className="title is-3" {...props} />,
+                p: props => <p className="" {...props} />,
+              }}
+            >
+              {children}
+            </MDXProvider>
+          </div>
+        </div>
       </Container>
       <Categories />
     </Layout>

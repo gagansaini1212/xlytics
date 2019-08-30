@@ -6,12 +6,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/perminder-klair/kickoff-gatsbyjs.git"
+    "url": "git+https://github.com/zeiq-co/packrs-website.git"
   },
   "bugs": {
-    "url": "https://github.com/perminder-klair/kickoff-gatsbyjs/issues"
+    "url": "https://github.com/zeiq-co/packrs-website/issues"
   },
-  "homepage": "https://github.com/perminder-klair/kickoff-gatsbyjs#readme",
+  "homepage": "https://github.com/zeiq-co/packrs-website#readme",
   "scripts": {
     "start": "npm run develop",
     "develop": "gatsby develop",
@@ -31,7 +31,6 @@
     "gatsby": "^2.3.3",
     "gatsby-image": "^2.0.35",
     "gatsby-plugin-google-analytics": "^2.0.18",
-    "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-manifest": "^2.0.25",
     "gatsby-plugin-mdx": "^1.0.33",
     "gatsby-plugin-offline": "^2.0.25",
@@ -64,15 +63,5 @@
     "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.16.1",
     "pretty-quick": "^1.10.0"
-  },
-  "keywords": [
-    "npm",
-    "node",
-    "gatsbyjs",
-    "javascript",
-    "graphql",
-    "graphql",
-    "reactjs",
-    "boilerplate"
-  ]
+  }
 }

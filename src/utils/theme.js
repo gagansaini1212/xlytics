@@ -70,6 +70,14 @@ const GlobalStyle = createGlobalStyle`
       background-color: ${darken(0.06, theme.mainBrandColor)};
     }
   }
+  .button.is-secondary {
+    background-color: ${theme.lightAccent};
+    transition: background-color 0.2s ease;
+    color: #ffffff;
+    :hover {
+      background-color: ${darken(0.06, theme.lightAccent)};
+    }
+  }
   .button.is-link {
     background-color: ${theme.darkAccent};
     transition: background-color 0.2s ease;
