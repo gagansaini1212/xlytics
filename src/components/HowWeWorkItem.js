@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Box = styled.div`
   box-shadow: none;
   .title {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
 `;
 
