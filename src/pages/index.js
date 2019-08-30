@@ -14,10 +14,10 @@ import Reviews from '../components/Reviews';
 
 const TopContainer = styled.div`
   background-image: url('/images/hero-bg.png');
-  background-size: 50%;
+  background-size: 55%;
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: top;
+  background-position-x: 45vw;
+  background-position-y: 0vh;
 `;
 
 export default class IndexPage extends React.Component {
