@@ -7,7 +7,9 @@ import PageLayout from './PageLayout';
 export default function PageTemplate({ data: { mdx } }) {
   return (
     <PageLayout>
-      <h1 className="title size-1">{mdx.frontmatter.title}</h1>
+      <h1 className="title is-1 has-text-centered has-text-weight-bold">
+        {mdx.frontmatter.title}
+      </h1>
       <MDXRenderer>{mdx.body}</MDXRenderer>
     </PageLayout>
   );

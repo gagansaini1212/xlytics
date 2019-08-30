@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import dayjs from 'dayjs';
 
 const Container = styled.article`
   && {
@@ -24,7 +25,7 @@ const NewsItem = ({ post }) => (
     <div className="media-content">
       <div className="content">
         <span className="has-text-weight-bold is-uppercase">
-          {post.frontmatter.date}
+          {dayjs(post.frontmatter.date).format('MMMM YYYY')}
         </span>{' '}
         <span className="has-text-weight-bold has-text-warning is-uppercase category">
           {post.frontmatter.category}
