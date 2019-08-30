@@ -34,6 +34,9 @@ const Section = styled.section`
 
 const StoreContainer = styled.div`
   margin-top: 3rem;
+  @media screen and (max-width: 600px) {
+    display: flex;
+  }
   img {
     margin-right: 10px;
     width: auto;
