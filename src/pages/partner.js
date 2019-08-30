@@ -24,7 +24,7 @@ const items = [
     id: 1,
     title: 'Choose when to work',
     details:
-      'You’ll be self-employed and free to work to your own availability. The Packrs rider app makes it easy to plan ahead.',
+      'You’ll be self-employed and free to work to your availability. The Packrs rider app makes it easy to plan.',
     icon: 'fas fa-clock',
   },
   {

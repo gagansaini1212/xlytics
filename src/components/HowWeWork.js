@@ -17,25 +17,27 @@ const items = [
   {
     id: 1,
     title: 'Any product you love',
-    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    details: 'From food, fruits, gifts to keys we can get it for you!',
     icon: 'fas fa-stopwatch',
   },
   {
     id: 2,
     title: '45 mins delivery',
-    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    details:
+      'Delivery will be guaranteed to be delivered within the timeframe.',
     icon: 'fas fa-map-marked-alt',
   },
   {
     id: 3,
     title: 'Save time & money',
-    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    details:
+      'No need to go outside and waste time and energy, we are here for you.',
     icon: 'fas fa-piggy-bank',
   },
   {
     id: 4,
     title: 'Earn cash and free deliveries',
-    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    details: 'Refer to your friends and family, both can earn free deliveries',
     icon: 'fas fa-gift',
   },
 ];

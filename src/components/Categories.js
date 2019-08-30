@@ -14,41 +14,49 @@ const categories = [
     id: 1,
     title: 'Pick n Drop',
     image: 'https://bulma.io/images/placeholders/1280x960.png',
+    emoji: '📦',
   },
   {
     id: 2,
     title: 'Food & Drinks',
     image: 'https://bulma.io/images/placeholders/1280x960.png',
+    emoji: '🍲',
   },
   {
     id: 3,
     title: 'Groceries',
     image: 'https://bulma.io/images/placeholders/1280x960.png',
+    emoji: '🛒',
   },
   {
     id: 4,
     title: 'Fruit & Veg',
     image: 'https://bulma.io/images/placeholders/1280x960.png',
+    emoji: '🍌',
   },
   {
     id: 5,
     title: 'Meet & Fish',
     image: 'https://bulma.io/images/placeholders/1280x960.png',
+    emoji: '🍗',
   },
   {
     id: 6,
     title: 'Pharmacy',
     image: 'https://bulma.io/images/placeholders/1280x960.png',
+    emoji: '💊',
   },
   {
     id: 7,
     title: 'Gifts & Stationary',
     image: 'https://bulma.io/images/placeholders/1280x960.png',
+    emoji: '🎁',
   },
   {
     id: 8,
     title: 'Electronics',
     image: 'https://bulma.io/images/placeholders/1280x960.png',
+    emoji: '🔌',
   },
 ];
 

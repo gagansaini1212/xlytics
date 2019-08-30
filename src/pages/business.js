@@ -23,7 +23,7 @@ const items = [
   {
     id: 1,
     title: 'Real-time tracking',
-    details: 'Follow your orders in real time from our dashboard',
+    details: 'Follow your orders in real-time from our dashboard',
     icon: 'fas fa-truck-moving',
   },
   {
