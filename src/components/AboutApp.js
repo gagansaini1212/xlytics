@@ -8,13 +8,23 @@ import 'slick-carousel/slick/slick-theme.css';
 const slides = [
   {
     id: 1,
-    title: 'screen 1',
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    title: 'Dashboard',
+    image: '/images/app-screens/screen-1.png',
   },
   {
     id: 2,
-    title: 'screen 2',
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    title: 'Delivery Details',
+    image: '/images/app-screens/screen-2.png',
+  },
+  {
+    id: 3,
+    title: 'Wallet',
+    image: '/images/app-screens/screen-3.png',
+  },
+  {
+    id: 4,
+    title: 'Location Select',
+    image: '/images/app-screens/screen-4.png',
   },
 ];
 
