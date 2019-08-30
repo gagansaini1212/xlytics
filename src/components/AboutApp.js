@@ -27,6 +27,27 @@ const Section = styled.section`
   h2.title {
     margin-bottom: 3.2rem;
   }
+  .slick-slider {
+    width: 328px;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 18px;
+    padding: 8px;
+    border-radius: 61px;
+    ::before {
+      content: '';
+      background-image: url(/images/iphone-mokeup.png);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: 1;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
   .slick-slide {
     > div {
       > div {
@@ -44,17 +65,19 @@ const Slide = styled.div`
 `;
 
 const Image = styled.img`
-  width: 270px;
-  height: 450px;
+  width: 300px;
+  height: 640px;
+  border-radius: 50px;
 `;
 
 const AboutApp = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
   };
 
   return (
