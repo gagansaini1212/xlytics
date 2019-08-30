@@ -7,7 +7,19 @@ import swal from 'sweetalert';
 
 import apolloClient from '../utils/apolloClient';
 
-const Container = styled.form``;
+const Container = styled.form`
+  .field {
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+  }
+  .field.is-grouped > .control {
+    @media screen and (max-width: 600px) {
+      margin-bottom: 7px;
+      margin-right: 0rem;
+    }
+  }
+`;
 
 const sendAppLinkMutation = gql`
   mutation sendAppLink($input: SendAppLinkInput!) {
