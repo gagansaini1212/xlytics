@@ -22,9 +22,11 @@ const NewsUpdates = ({ data }) => {
         </h2>
         <div className="columns is-centered">
           <div className="column is-four-fifths">
-            {posts.map(({ node: post }) => (
-              <NewsItem key={post.id} post={post} />
-            ))}
+            <section className="section">
+              {posts.map(({ node: post }) => (
+                <NewsItem key={post.id} post={post} />
+              ))}
+            </section>
           </div>
         </div>
       </Container>

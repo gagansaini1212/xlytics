@@ -130,7 +130,7 @@ const Footer = () => (
                 <Link to="/partner">Apply as Rider</Link>
               </li>
               <li>
-                <a href="mailto:hi@packrs.co">Contact Us</a>
+                <Link to="/contact">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -179,11 +179,6 @@ const Footer = () => (
                 >
                   <span className="icon has-text-info">
                     <i className="fab fa-linkedin" />
-                  </span>
-                </a>
-                <a href="mailto:hi@packrs.co">
-                  <span className="icon has-text-info">
-                    <i className="fas fa-envelope" />
                   </span>
                 </a>
               </Icons>

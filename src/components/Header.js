@@ -30,6 +30,12 @@ const Section = styled.section`
       color: ${props => props.theme.darkAccent};
     }
   }
+  .navbar-burger {
+    background-color: #1c1323;
+    color: #fff;
+    opacity: 0.6;
+    border-radius: 4px;
+  }
 `;
 
 export default class Header extends React.Component {

@@ -19,7 +19,7 @@ const TopContainer = styled.div`
   background-position-x: right;
   background-position-y: top;
   @media screen and (max-width: 600px) {
-    background-size: 77%;
+    background-size: 70%;
   }
 `;
 
