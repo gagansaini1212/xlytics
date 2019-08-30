@@ -6,15 +6,14 @@ const Section = styled.section`
   margin-bottom: 4rem;
 `;
 
-const Subscribe = () => (
+const AppDownload = () => (
   <Section className="section">
     <div className="container">
       <h2 className="title is-2 has-text-centered has-text-weight-bold">
         Subscribe
       </h2>
-      <div>form here</div>
     </div>
   </Section>
 );
 
-export default Subscribe;
+export default AppDownload;
