@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import { MDXProvider } from '@mdx-js/react';
 
 import Layout from './Layout';
-import AppDownload from './AppDownload';
 
 const Container = styled.div`
   margin-top: 2rem;
@@ -22,10 +21,12 @@ const Container = styled.div`
     margin-bottom: 1rem;
     font-size: 18px;
   }
-  img {
-    display: flex;
-    margin: 3rem auto 4rem auto;
-    box-shadow: ${props => props.theme.boxShadow};
+  .page-content {
+    img {
+      display: flex;
+      margin: 3rem auto 4rem auto;
+      box-shadow: ${props => props.theme.boxShadow};
+    }
   }
 `;
 
@@ -50,7 +51,6 @@ export default function PageTemplate({ children }) {
           </div>
         </div>
       </Container>
-      <AppDownload />
     </Layout>
   );
 }

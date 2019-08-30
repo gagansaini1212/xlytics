@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 import config from '../utils/config';
 
-const Section = styled.section`
-  margin-top: 2rem;
+const Section = styled.div`
+  margin-top: 6rem;
   margin-bottom: 2rem;
   img.mockup {
     height: 400px;
@@ -31,31 +31,29 @@ const StoreContainer = styled.div`
 `;
 
 const AppDownload = () => (
-  <Section className="section">
-    <h2 className="container">
-      <div className="columns is-centered">
-        <div className="column is-two-fifths">
-          <h3 className="title is-3 has-text-centered has-text-weight-bold">
-            Download the Packrs app
-          </h3>
-          <StoreContainer>
-            <a href={config.iosStore}>
-              <img src="/images/store-ios.png" alt="Packrs ios store" />
-            </a>
-            <a href={config.androidStore}>
-              <img src="/images/store-android.png" alt="Packrs android store" />
-            </a>
-          </StoreContainer>
-        </div>
-        <div className="column is-two-fifths">
-          <img
-            className="mockup"
-            src="/images/mockup-dashboard.png"
-            alt="packrs dashboard mockup"
-          />
-        </div>
+  <Section className="container">
+    <div className="columns is-centered">
+      <div className="column is-two-fifths">
+        <h3 className="title is-3 has-text-centered has-text-weight-bold">
+          Download the Packrs app
+        </h3>
+        <StoreContainer>
+          <a href={config.iosStore}>
+            <img src="/images/store-ios.png" alt="Packrs ios store" />
+          </a>
+          <a href={config.androidStore}>
+            <img src="/images/store-android.png" alt="Packrs android store" />
+          </a>
+        </StoreContainer>
       </div>
-    </h2>
+      <div className="column is-two-fifths">
+        <img
+          className="mockup"
+          src="/images/mockup-dashboard.png"
+          alt="packrs dashboard mockup"
+        />
+      </div>
+    </div>
   </Section>
 );
 
