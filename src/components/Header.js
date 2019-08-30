@@ -13,7 +13,7 @@ const Section = styled.section`
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
-      max-height: 2.75rem;
+      max-height: 3.75rem;
     }
   }
   .navbar-menu {
@@ -25,6 +25,7 @@ const Section = styled.section`
   }
   .navbar-item {
     font-weight: 700;
+    font-size: 1.2rem;
     :hover {
       color: ${props => props.theme.darkAccent};
     }

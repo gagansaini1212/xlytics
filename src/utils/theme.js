@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
-import { darken } from 'polished';
+import { darken, lighten } from 'polished';
 
 const mainBrandColor = '#33B760';
 const lightShades = '#F9F9F9';
@@ -62,6 +62,9 @@ const GlobalStyle = createGlobalStyle`
   }
   p, .title, .box {
     color: ${theme.textColor} !important;
+  }
+  .subtitle {
+    color: ${lighten(0.06, theme.textColor)} !important;
   }
   .button.is-primary {
     background-color: ${theme.mainBrandColor};

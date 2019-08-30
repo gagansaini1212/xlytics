@@ -16,8 +16,11 @@ const TopContainer = styled.div`
   background-image: url('/images/hero-bg.png');
   background-size: 55%;
   background-repeat: no-repeat;
-  background-position-x: 45vw;
-  background-position-y: 0vh;
+  background-position-x: right;
+  background-position-y: top;
+  @media screen and (max-width: 600px) {
+    background-size: 77%;
+  }
 `;
 
 export default class IndexPage extends React.Component {
