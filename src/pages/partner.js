@@ -66,27 +66,29 @@ const items = [
 const Partner = () => (
   <Layout>
     <Helmet title="Become a delivery partner" />
-    <Container className="container">
-      <h1 className="title is-1 has-text-centered has-text-weight-bold">
-        Become a delivery partner
-      </h1>
-      <p className="subtitle is-3 has-text-centered">
-        Flexible work, competitive fees
-      </p>
-      <a
-        href="https://airtable.com/shrNYyLynebosW850"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="button is-secondary is-large"
-      >
-        Apply now
-      </a>
-      <Features className="columns is-multiline">
-        {items.map(item => (
-          <FeatureItem key={item.id} item={item} />
-        ))}
-      </Features>
-    </Container>
+    <section className="section">
+      <Container className="container">
+        <h1 className="title is-1 has-text-centered has-text-weight-bold">
+          Become a delivery partner
+        </h1>
+        <p className="subtitle is-3 has-text-centered">
+          Flexible work, competitive fees
+        </p>
+        <a
+          href="https://airtable.com/shrNYyLynebosW850"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button is-secondary is-large"
+        >
+          Apply now
+        </a>
+        <Features className="columns is-multiline">
+          {items.map(item => (
+            <FeatureItem key={item.id} item={item} />
+          ))}
+        </Features>
+      </Container>
+    </section>
   </Layout>
 );
 

@@ -66,27 +66,29 @@ const items = [
 const Business = () => (
   <Layout>
     <Helmet title="Become a business partner" />
-    <Container className="container">
-      <h1 className="title is-1 has-text-centered has-text-weight-bold">
-        Become a business partner
-      </h1>
-      <p className="subtitle is-3 has-text-centered">
-        Schedule your business deliveries in minutes!
-      </p>
-      <a
-        href="https://airtable.com/shrzgjKLLyiwUVRA0"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="button is-secondary is-large"
-      >
-        Get started
-      </a>
-      <Features className="columns is-multiline">
-        {items.map(item => (
-          <FeatureItem key={item.id} item={item} />
-        ))}
-      </Features>
-    </Container>
+    <section className="section">
+      <Container className="container">
+        <h1 className="title is-1 has-text-centered has-text-weight-bold">
+          Become a business partner
+        </h1>
+        <p className="subtitle is-3 has-text-centered">
+          Schedule your business deliveries in minutes!
+        </p>
+        <a
+          href="https://airtable.com/shrzgjKLLyiwUVRA0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button is-secondary is-large"
+        >
+          Get started
+        </a>
+        <Features className="columns is-multiline">
+          {items.map(item => (
+            <FeatureItem key={item.id} item={item} />
+          ))}
+        </Features>
+      </Container>
+    </section>
   </Layout>
 );
 

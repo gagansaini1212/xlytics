@@ -16,20 +16,20 @@ const NewsUpdates = ({ data }) => {
   return (
     <Layout>
       <Helmet title="News & Updates" />
-      <Container className="container">
-        <h2 className="title is-2 has-text-centered has-text-weight-bold">
-          News & Updates
-        </h2>
-        <div className="columns is-centered">
-          <div className="column is-four-fifths">
-            <section className="section">
+      <section className="section">
+        <Container className="container">
+          <h2 className="title is-2 has-text-centered has-text-weight-bold">
+            News & Updates
+          </h2>
+          <div className="columns is-centered">
+            <div className="column is-four-fifths">
               {posts.map(({ node: post }) => (
                 <NewsItem key={post.id} post={post} />
               ))}
-            </section>
+            </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </section>
     </Layout>
   );
 };
