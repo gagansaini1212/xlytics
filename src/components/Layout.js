@@ -6,6 +6,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import GlobalStyle, { theme } from '../utils/theme';
 import config from '../utils/config';
 import Header from './Header';
+import AvailableCities from './AvailableCities';
 import Footer from './Footer';
 
 const Container = styled.div`
@@ -24,6 +25,7 @@ const IndexLayout = ({ children, hideHeader }) => (
       <GlobalStyle />
       {!hideHeader && <Header />}
       <Container>{children}</Container>
+      <AvailableCities />
       <Footer />
     </React.Fragment>
   </ThemeProvider>

@@ -3,7 +3,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MDXProvider } from '@mdx-js/react';
+
 import Layout from './Layout';
+import Categories from './Categories';
 
 const Container = styled.div`
   margin-top: 2rem;
@@ -36,6 +38,7 @@ export default function PageTemplate({ children }) {
           {children}
         </MDXProvider>
       </Container>
+      <Categories />
     </Layout>
   );
 }
