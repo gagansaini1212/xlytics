@@ -17,9 +17,11 @@ const Section = styled.section`
     }
   }
   .navbar-menu {
-    position: absolute;
-    width: 100%;
-    transition: 0.6s;
+    @media screen and (max-width: 600px) {
+      position: absolute;
+      width: 100%;
+      transition: 0.6s;
+    }
   }
   .navbar-item {
     font-weight: 700;
