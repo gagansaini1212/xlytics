@@ -25,7 +25,7 @@ const StoreContainer = styled.div`
   img {
     margin-right: 10px;
     width: auto;
-    height: 42px;
+    height: 46px;
   }
 `;
 

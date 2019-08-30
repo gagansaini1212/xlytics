@@ -1,8 +1,8 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
 import Layout from '../components/Layout';
+import Seo from '../components/Seo';
 import AppDownload from '../components/AppDownload';
 
 const Container = styled.div`
@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const NotFoundPage = () => (
   <Layout>
-    <Helmet title="NOT FOUND" />
+    <Seo title="NOT FOUND" />
     <section className="section">
       <Container className="container">
         <h1 className="title">NOT FOUND</h1>

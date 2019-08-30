@@ -1,8 +1,8 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
 import Layout from '../components/Layout';
+import Seo from '../components/Seo';
 import FeatureItem from '../components/FeatureItem';
 
 const Container = styled.div`
@@ -65,7 +65,7 @@ const items = [
 
 const Partner = () => (
   <Layout>
-    <Helmet title="Become a delivery partner" />
+    <Seo title="Become a delivery partner" />
     <section className="section">
       <Container className="container">
         <h1 className="title is-1 has-text-centered has-text-weight-bold">

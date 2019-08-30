@@ -1,7 +1,7 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 
 import styled from 'styled-components';
+import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 
 const Section = styled.div`
@@ -13,40 +13,39 @@ const Section = styled.div`
   }
   .image {
     width: 500px;
-    margin: 0rem auto;
+    height: auto;
+    margin: 0 auto;
     object-position: center;
   }
   .button {
-    :active {
-      border-color: transparent;
-    }
+    margin-top: 2rem;
   }
 `;
 
 const Contact = () => (
   <Layout>
-    <Helmet title="Contact Us" />
+    <Seo title="Contact Us" />
     <Section className="section">
       <div className="container">
-        <div className="columns">
-          <div className="column">
+        <div className="columns is-centered">
+          <div className="column is-two-fifths">
             <h2 className="title is-1 has-text-weight-bold">Contact Us</h2>
             <p>
-              We’re as accessible as your good neighbour. So much so that you
+              We’re as accessible as your good neighbour. Feel free
               <br />
-              can hand us over your keys too
-            </p>
-            <p className="is-4">
-              <span role="img" aria-label="e-mail">
-                📧
-              </span>{' '}
-              <a href="mailto:hi@packrs.co">hi@packrs.co</a>
+              to give us a shout.
             </p>
             <p>
               <span role="img" aria-label="Round Pushpin">
                 📍
               </span>{' '}
               Punjab, India
+            </p>
+            <p className="is-4">
+              <span role="img" aria-label="e-mail">
+                📧
+              </span>{' '}
+              <a href="mailto:hi@packrs.co">hi@packrs.co</a>
             </p>
             <p>
               <span role="img" aria-label="telephone">
@@ -61,14 +60,13 @@ const Contact = () => (
                 rel="noopener noreferrer"
               >
                 <button type="submit" className="button is-secondary is-medium">
-                  get in touch
+                  Get in touch
                 </button>
               </a>
             </p>
           </div>
-
-          <div className="column">
-            <img className="image" src="/images/contact-1.jpg" alt="delivery box" />
+          <div className="column is-two-fifths">
+            <img className="image" src="/images/contact.svg" alt="contact us" />
           </div>
         </div>
       </div>

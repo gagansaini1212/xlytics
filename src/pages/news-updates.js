@@ -1,8 +1,8 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
 import Layout from '../components/Layout';
+import Seo from '../components/Seo';
 import NewsItem from '../components/NewsItem';
 
 const Container = styled.div`
@@ -15,7 +15,7 @@ const NewsUpdates = ({ data }) => {
 
   return (
     <Layout>
-      <Helmet title="News & Updates" />
+      <Seo title="News & Updates" />
       <section className="section">
         <Container className="container">
           <h2 className="title is-2 has-text-centered has-text-weight-bold">

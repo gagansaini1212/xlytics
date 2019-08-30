@@ -1,4 +1,7 @@
 import React from 'react';
+import Seo from '../components/Seo';
+
+import Layout from '../components/Layout';
 
 class Support extends React.Component {
   componentDidMount() {
@@ -6,7 +9,16 @@ class Support extends React.Component {
   }
 
   render() {
-    return <p>Loading ...</p>;
+    return (
+      <Layout>
+        <Seo title="Support" />
+        <section className="section">
+          <div className="container">
+            <p>Loading ...</p>
+          </div>
+        </section>
+      </Layout>
+    );
   }
 }
 

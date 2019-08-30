@@ -3,12 +3,14 @@
 import React from 'react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
+import Seo from './Seo';
 import PageLayout from './PageLayout';
 import AppDownload from './AppDownload';
 
 export default function PageTemplate({ data: { mdx } }) {
   return (
     <PageLayout>
+      <Seo title={mdx.frontmatter.title} />
       <div className="page-content">
         <h1 className="title is-1 has-text-centered has-text-weight-bold">
           {mdx.frontmatter.title}
