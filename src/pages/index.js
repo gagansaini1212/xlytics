@@ -11,7 +11,6 @@ import HowWeWork from '../components/HowWeWork';
 import AboutApp from '../components/AboutApp';
 import Partners from '../components/Partners';
 import Reviews from '../components/Reviews';
-import AvailableCities from '../components/AvailableCities';
 
 const TopContainer = styled.div`
   background-image: url('/images/hero-bg.png');
@@ -40,7 +39,6 @@ export default class IndexPage extends React.Component {
         <HowWeWork />
         <Partners />
         <Reviews />
-        <AvailableCities />
       </Layout>
     );
   }

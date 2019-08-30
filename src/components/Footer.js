@@ -75,7 +75,7 @@ const Footer = () => (
                 <Link to="/about">About Us</Link>
               </li>
               <li>
-                <a href="https://news.packrs.co/">News & Updates</a>
+                <Link to="/news-updates">News & Updates</Link>
               </li>
               <li>
                 <a

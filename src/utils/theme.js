@@ -79,6 +79,9 @@ const GlobalStyle = createGlobalStyle`
   .button, .input, .card {
     box-shadow: ${theme.boxShadow};
   }
+  .has-text-warning {
+    color: ${theme.lightAccent} !important;
+  }
 `;
 
 export default GlobalStyle;
