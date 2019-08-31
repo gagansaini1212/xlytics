@@ -12,6 +12,11 @@ const Container = styled.div`
   }
   .image {
     margin: 0 auto;
+    img {
+      height: 80px;
+      width: auto;
+      margin: 0 auto;
+    }
   }
   .emoji {
     font-size: 3.5rem;
@@ -23,12 +28,12 @@ const Container = styled.div`
 
 const CategoryItem = ({ item }) => (
   <Container className="column is-one-quarter">
-    {/* <figure className="image is-96x96">
-      <img className="is-rounded" src={item.image} alt={item.title} />
-    </figure> */}
-    <span className="emoji" role="img" aria-label={item.title}>
+    <figure className="image is-96x96">
+      <img src={item.image} alt={item.title} />
+    </figure>
+    {/* <span className="emoji" role="img" aria-label={item.title}>
       {item.emoji}
-    </span>
+    </span> */}
     <h5 className="has-text-centered has-text-weight-semibold is-size-5">
       {item.title}
     </h5>
