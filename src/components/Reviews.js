@@ -11,10 +11,10 @@ const Section = styled.section`
 const items = [
   {
     id: 1,
-    personName: 'John Smith',
+    personName: 'Sourav Masih',
     text:
       "Very Good App!!! just arrived in my hotel in Chandigarh and starving. didn't want leave hotel so I ordered for delivery using this app. Plus, I forgot my phone charger at home, Packrs delivered even phone charger to me.",
-    handle: '@johnsmith',
+    handle: '@souravmasih12',
     image: '/images/reviews/gurkaran.jpg',
   },
   {
@@ -22,7 +22,7 @@ const items = [
     personName: 'Anushkha',
     text:
       'A good app and company, they do their best to make sure you get your order or are compensated fairly. If anything is missing or wrong definitely contact them, they are usually fast to fix the issue.',
-    handle: '@anushkha',
+    handle: '@anushkha4me',
     image: '/images/reviews/samar.jpg',
   },
 ];
