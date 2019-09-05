@@ -32,11 +32,11 @@ const HomeHero = () => (
         <div className="column is-half">
           <section className="hero is-medium">
             <div className="hero-body">
-              <h1 className="title is-size-3-mobile">
-                Great products, fast.
-              </h1>
+              <h1 className="title is-size-3-mobile">Great products, fast.</h1>
               <HelpText>
-                We&apos;re a digital product studio that helps tech focussed businesses design and build digital products and services, quickly.
+                We&apos;re a digital product studio that helps tech focussed
+                businesses design and build digital products and services,
+                quickly.
               </HelpText>
               <a className="button is-primary is-medium is-rounded has-text-weight-bold">
                 Book a Discovery Call

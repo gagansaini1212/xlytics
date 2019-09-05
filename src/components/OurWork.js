@@ -20,32 +20,21 @@ const OurWork = () => (
     <div className="container">
       <div className="columns">
         <div className="column is-half is-offset-one-quarter">
-          <h1 className="title is-2 has-text-centered">Which means we build lots of cool stuff for our partners.</h1>
-          <HelpText className=" has-text-centered">We build things other agencies wouldn’t dare to on the web, iOS, Android, Voice and anything else that runs code!</HelpText>
+          <h1 className="title is-2 has-text-centered">
+            Which means we build lots of cool stuff for our partners.
+          </h1>
+          <HelpText className=" has-text-centered">
+            We build things other agencies wouldn’t dare to on the web, iOS,
+            Android, Voice and anything else that runs code!
+          </HelpText>
         </div>
       </div>
       <div className="columns is-centered">
-        <WorkFeature 
-          img={web} 
-          alt="Web apps" 
-          title="Web" 
-        />
-        <WorkFeature
-          img={mobile} 
-          alt="mobile apps" 
-          title="Mobile"
-        />
-        <WorkFeature
-          img={voice} 
-          alt="Voice" 
-          title="Voice"
-        />
-        <WorkFeature 
-          img={entertainment}
-          alt="games"
-          title="Entertainment"
-         />
-        </div>
+        <WorkFeature img={web} alt="Web apps" title="Web" />
+        <WorkFeature img={mobile} alt="mobile apps" title="Mobile" />
+        <WorkFeature img={voice} alt="Voice" title="Voice" />
+        <WorkFeature img={entertainment} alt="games" title="Entertainment" />
+      </div>
     </div>
   </section>
 );

@@ -17,7 +17,7 @@ const Section = styled.section`
     }
   }
   .navbar-item :hover {
-      background-color: ${props => props.theme.backgroundColor} !important;
+    background-color: ${props => props.theme.backgroundColor} !important;
   }
   .navbar-menu {
     @media screen and (max-width: 600px) {
@@ -113,7 +113,10 @@ export default class Header extends React.Component {
                 </Link>
                 <div className="navbar-item">
                   <div className="buttons">
-                    <Link to="/contactUs" className="button is-rounded is-medium is-primary">
+                    <Link
+                      to="/contactUs"
+                      className="button is-rounded is-medium is-primary"
+                    >
                       Contact Us
                     </Link>
                   </div>

@@ -21,7 +21,9 @@ const WorkStep = ({ img, alt, title, subtitle, btnText }) => (
     <img src={img} alt={alt} />
     <h1 className="title is-3">{title}</h1>
     <HelpText>{subtitle}</HelpText>
-    <a className="button is-primary is-large is-rounded has-text-weight-bold">{btnText}</a>
+    <a className="button is-primary is-large is-rounded has-text-weight-bold">
+      {btnText}
+    </a>
   </Wrapper>
 );
 

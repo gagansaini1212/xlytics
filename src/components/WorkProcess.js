@@ -19,30 +19,36 @@ const WorkProcess = () => (
     <div className="container">
       <div className="columns">
         <div className="column is-half is-offset-one-quarter">
-          <h1 className="title is-2 has-text-centered">Solve big challenges, build great products, work better together.</h1>
-          <HelpText className=" has-text-centered">We work with startups, scaleups and established businesses to help them achieve their goals through technology.</HelpText>
+          <h1 className="title is-2 has-text-centered">
+            Solve big challenges, build great products, work better together.
+          </h1>
+          <HelpText className=" has-text-centered">
+            We work with startups, scaleups and established businesses to help
+            them achieve their goals through technology.
+          </HelpText>
         </div>
       </div>
       <div className="columns">
-        <WorkStep 
-          img={ideaImg} 
-          alt="Ideas" title="Validate Ideas" 
-          subtitle="We use the Design Sprint to validate ideas before wasting time and money on them." 
-          btnText="Design Sprints" 
+        <WorkStep
+          img={ideaImg}
+          alt="Ideas"
+          title="Validate Ideas"
+          subtitle="We use the Design Sprint to validate ideas before wasting time and money on them."
+          btnText="Design Sprints"
         />
         <WorkStep
-          img={rocketImg} 
-          alt="Build Products" 
-          title="Build digital products" 
-          subtitle="Unlike a lot of agencies; we don't just design stuff. We build whatever needs to be built." 
-          btnText="Development" 
+          img={rocketImg}
+          alt="Build Products"
+          title="Build digital products"
+          subtitle="Unlike a lot of agencies; we don't just design stuff. We build whatever needs to be built."
+          btnText="Development"
         />
         <WorkStep
-          img={core} 
-          alt="Our Methods" 
-          title="Teach our methods" 
-          subtitle="We train consultants, product teams and other agencies on how to use our methods." 
-          btnText="Training" 
+          img={core}
+          alt="Our Methods"
+          title="Teach our methods"
+          subtitle="We train consultants, product teams and other agencies on how to use our methods."
+          btnText="Training"
         />
       </div>
     </div>
