@@ -57,8 +57,7 @@ const Contact = () => (
               <a
                 href="https://packrs.freshdesk.com/support/tickets/new"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <button type="submit" className="button is-secondary is-medium">
                   Get in touch
                 </button>

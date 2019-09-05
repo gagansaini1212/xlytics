@@ -8,12 +8,7 @@ import HomeHero from '../components/HomeHero';
 import WorkProcess from '../components/WorkProcess';
 import OurWork from '../components/OurWork';
 import GuideInfo from '../components/GuideInfo';
-
-import Categories from '../components/Categories';
-import HowWeWork from '../components/HowWeWork';
-import AboutApp from '../components/AboutApp';
-import Partners from '../components/Partners';
-import Reviews from '../components/Reviews';
+import ContactView from '../components/ContactView';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -30,12 +25,7 @@ export default class IndexPage extends React.Component {
         <WorkProcess />
         <OurWork />
         <GuideInfo />
-        
-        <Categories />
-        <AboutApp />
-        <HowWeWork />
-        <Partners />
-        <Reviews />
+        <ContactView />
       </Layout>
     );
   }

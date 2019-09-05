@@ -5,7 +5,7 @@ import { darken, lighten } from 'polished';
 const mainBrandColor = '#EC5D51';
 const lightShades = '#F9F9F9';
 const darkAccent = '#726699';
-const darkShades = '#1C1323';
+const darkShades = '#303030';
 
 export const theme = {
   // It can be liberally applied to your layout as its main identity.
@@ -27,6 +27,7 @@ export const theme = {
   primaryColor: mainBrandColor,
   borderColor: '#e0e6ef',
   backgroundColor: '#FFC000',
+  backgroundDark: '#f2b704',
   backgroundInputColor: lightShades,
   backgroundInputColorDark: darkShades,
   fontSize: 16,
@@ -34,6 +35,7 @@ export const theme = {
   fontSizeExtraSmall: 12,
   fontSizeMedium: 18,
   fontSizeLarge: 22,
+  fontSizeExtraLarge: 28,
   textColor: darkShades, // '#0A0B11',
   textColorInverse: lightShades,
   textColorLite: '#8B8989',
@@ -87,9 +89,9 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${theme.darkAccent};
     transition: background-color 0.2s ease;
     :hover {
-      background-color: ${darken(0.06, theme.darkAccent)};
-    }
-  }
+      background-color: ${darken(0.06, theme.darkAccent)};  
+    } 
+  } 
   .button, .input, .card {
     box-shadow: ${theme.boxShadow};
   }

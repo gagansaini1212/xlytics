@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 
 import config from '../utils/config';
+import FooterHeading from './FooterHeading';
 
 const Section = styled.section`
   background-color: ${props => props.theme.darkShades};
@@ -30,17 +30,30 @@ const Section = styled.section`
       color: #fff;
     }
   }
+  .margin {
+    margin-right: 3rem;
+  }
+  .space {
+    margin: 3rem 0rem 3rem 0rem;
+  }
 `;
 
-const StoreContainer = styled.div`
-  margin-top: 3rem;
-  @media screen and (max-width: 600px) {
-    display: flex;
+const PolicyWrapper = styled.div`
+  margin-top: 0.5rem;
+`;
+
+const Navigation = styled.div`
+  display: grid;
+  margin-top: 2rem;
+  a {
+    margin: 1.2rem 0rem;
   }
-  img {
-    margin-right: 10px;
-    width: auto;
-    height: 42px;
+`;
+
+const InfoContainer = styled.div`
+  padding: 2rem 10rem;
+  @media screen and (max-width: 768px) {
+    padding: 0;
   }
 `;
 
@@ -48,7 +61,7 @@ const Icons = styled.div`
   .icon {
     color: ${props => props.theme.lightShades} !important;
     font-size: 1.7rem;
-    margin-left: 10px;
+    margin-right: 10px;
   }
 `;
 
@@ -57,136 +70,66 @@ const Footer = () => (
     <div className="container">
       <footer className="footer">
         <div className="columns">
-          <div className="column">
-            <h4 className="title is-4">Download The App</h4>
-            <StoreContainer>
-              <a href={config.iosStore}>
-                <img src="/images/store-ios.png" alt="Packrs ios store" />
+          <div className="column is-5">
+            <h1 className="title is-1">
+              Let’s build something great together.
+            </h1>
+            <h4 className="has-text-weight-bold space">
+              Copyright 2019 Sidekick Digital - All rights reserved.
+            </h4>
+            <FooterHeading heading="COMPANY NUMBER" />
+            <PolicyWrapper className="is-flex">
+              <h4 className="has-text-weight-bold margin">08897147</h4>
+              <a className="has-text-weight-bold margin">Privacy Policy</a>
+              <a className="has-text-weight-bold">Cookie Policy</a>
+            </PolicyWrapper>
+            <Navigation>
+              <FooterHeading heading="NAVIGATION" />
+              <a className="has-text-weight-bold">Design Sprints</a>
+              <a className="has-text-weight-bold">Design Sprint Training</a>
+              <a className="has-text-weight-bold">About</a>
+              <a className="has-text-weight-bold">Blog</a>
+            </Navigation>
+          </div>
+          <InfoContainer className="column">
+            <FooterHeading heading="NEW BUSINESS" size />
+            <a href="mailto:" className="is-size-3">
+              hello@sidekickdigital.co.uk
+            </a>
+            <FooterHeading heading="PHONE" size />
+            <a href="tel:" className="is-size-3">
+              01553 750 006
+            </a>
+            <FooterHeading heading="ADDRESS" size />
+            <h3 className="title is-4">
+              Sidekick Digital King’s Lynn Innovation Centre King’s Lynn Norfolk
+              PE30 5BY
+            </h3>
+            <FooterHeading heading="ADDRESS" size />
+            <h3 className="title is-4">
+              Sidekick Digital St John's Innovation Centre Cowley Road Cambridge
+              CB4 0WS
+            </h3>
+            <FooterHeading heading="SOCIAL" size />
+            <Icons>
+              <a
+                target="_blank"
+                href={config.instagram}
+                rel="noopener noreferrer">
+                <span className="icon has-text-info">
+                  <i className="fab fa-instagram" />
+                </span>
               </a>
-              <a href={config.androidStore}>
-                <img
-                  src="/images/store-android.png"
-                  alt="Packrs android store"
-                />
+              <a
+                target="_blank"
+                href={config.instagram}
+                rel="noopener noreferrer">
+                <span className="icon has-text-info">
+                  <i className="fab fa-twitter-square" />
+                </span>
               </a>
-            </StoreContainer>
-          </div>
-          <div className="column">
-            <h4 className="title is-4">Packrs</h4>
-            <ul>
-              <li>
-                <Link to="/about">About Us</Link>
-              </li>
-              <li>
-                <Link to="/news-updates">News & Updates</Link>
-              </li>
-              <li>
-                <a
-                  href="https://packrs.freshdesk.com/support/tickets/new"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Support
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://packrs-334.freshstatus.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Server Stats
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="column">
-            <h4 className="title is-4">Our Information</h4>
-            <ul>
-              <li>
-                <Link to="/faq">FAQ</Link>
-              </li>
-              <li>
-                <Link to="/privacy-policy">Privacy Policy</Link>
-              </li>
-              <li>
-                <Link to="/terms-and-conditions">Terms & Conditions</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="column">
-            <h4 className="title is-4">Reach Us</h4>
-            <ul>
-              <li>
-                <a
-                  href="https://perminderklair.freshteam.com/jobs/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Careers
-                </a>
-              </li>
-              <li>
-                <Link to="/business">Apply as Business</Link>
-              </li>
-              <li>
-                <Link to="/partner">Apply as Rider</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact Us</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="content">
-          <div className="columns">
-            <div className="column">
-              <p>
-                © 2019 <a href="https://www.packrs.co">Packrs</a> | Made with ❤️
-                in Punjab, India, and on the Internet.
-              </p>
-            </div>
-            <div className="column">
-              <Icons className="has-text-right">
-                <a
-                  target="_blank"
-                  href={config.facebook}
-                  rel="noopener noreferrer"
-                >
-                  <span className="icon has-text-info">
-                    <i className="fab fa-facebook-square" />
-                  </span>
-                </a>
-                <a
-                  target="_blank"
-                  href={config.instagram}
-                  rel="noopener noreferrer"
-                >
-                  <span className="icon has-text-info">
-                    <i className="fab fa-instagram" />
-                  </span>
-                </a>
-                <a
-                  target="_blank"
-                  href={config.twitter}
-                  rel="noopener noreferrer"
-                >
-                  <span className="icon has-text-info">
-                    <i className="fab fa-twitter-square" />
-                  </span>
-                </a>
-                <a
-                  target="_blank"
-                  href={config.linkedin}
-                  rel="noopener noreferrer"
-                >
-                  <span className="icon has-text-info">
-                    <i className="fab fa-linkedin" />
-                  </span>
-                </a>
-              </Icons>
-            </div>
-          </div>
+            </Icons>
+          </InfoContainer>
         </div>
       </footer>
     </div>
