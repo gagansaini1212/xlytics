@@ -78,8 +78,7 @@ const Partner = () => (
           href="https://airtable.com/shrNYyLynebosW850"
           target="_blank"
           rel="noopener noreferrer"
-          className="button is-secondary is-large"
-        >
+          className="button is-secondary is-large">
           Apply now
         </a>
         <Features className="columns is-multiline">

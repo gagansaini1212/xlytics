@@ -14,6 +14,9 @@ const HelpText = styled.p`
   font-weight: 300;
   margin-bottom: 2.5rem;
   padding: 0rem 5.5rem;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 const WorkStep = ({ img, alt, title, subtitle, btnText }) => (

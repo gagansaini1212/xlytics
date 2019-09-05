@@ -6,6 +6,9 @@ import { Link } from 'gatsby';
 
 const Section = styled.section`
   padding: 1rem 1.5rem;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
   font-family: ${props => props.theme.primaryFontFamily};
   .navbar {
     background-color: ${props => props.theme.backgroundColor};

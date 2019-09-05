@@ -93,11 +93,11 @@ const Footer = () => (
           </div>
           <InfoContainer className="column">
             <FooterHeading heading="NEW BUSINESS" size />
-            <a href="mailto:" className="is-size-3">
+            <a href="mailto:" className="is-size-4">
               hello@sidekickdigital.co.uk
             </a>
             <FooterHeading heading="PHONE" size />
-            <a href="tel:" className="is-size-3">
+            <a href="tel:" className="is-size-4">
               01553 750 006
             </a>
             <FooterHeading heading="ADDRESS" size />
