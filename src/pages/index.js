@@ -1,27 +1,19 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import HomeHero from '../components/HomeHero';
+import WorkProcess from '../components/WorkProcess';
+import OurWork from '../components/OurWork';
+import GuideInfo from '../components/GuideInfo';
+
 import Categories from '../components/Categories';
 import HowWeWork from '../components/HowWeWork';
 import AboutApp from '../components/AboutApp';
 import Partners from '../components/Partners';
 import Reviews from '../components/Reviews';
-
-const TopContainer = styled.div`
-  background-image: url('/images/hero-bg.png');
-  background-size: 55%;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: top;
-  @media screen and (max-width: 600px) {
-    background-size: 70%;
-  }
-`;
 
 export default class IndexPage extends React.Component {
   render() {
@@ -33,10 +25,12 @@ export default class IndexPage extends React.Component {
           url={config.siteUrl}
           image={config.image}
         />
-        <TopContainer>
-          <Header />
-          <HomeHero />
-        </TopContainer>
+        <Header />
+        <HomeHero />
+        <WorkProcess />
+        <OurWork />
+        <GuideInfo />
+        
         <Categories />
         <AboutApp />
         <HowWeWork />

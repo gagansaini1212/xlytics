@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import config from '../utils/config';
-import DownloadAppForm from './DownloadAppForm';
-
 const Section = styled.section`
   .title {
     font-size: 3.4rem;
@@ -12,21 +9,20 @@ const Section = styled.section`
   .subtitle {
     font-size: 3.4rem;
   }
-`;
-const HelpText = styled.p`
-  margin-top: 1.5rem;
-`;
-
-const StoreContainer = styled.div`
-  margin-top: 3rem;
-  @media screen and (max-width: 600px) {
-    display: flex;
+  h1 {
+    margin-bottom: 1rem;
   }
   img {
-    margin-right: 10px;
-    width: auto;
-    height: 46px;
+    width: 75%;
   }
+`;
+
+const HelpText = styled.p`
+  margin-top: 1.5rem;
+  font-size: 28px;
+  line-height: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
 `;
 
 const HomeHero = () => (
@@ -37,28 +33,19 @@ const HomeHero = () => (
           <section className="hero is-medium">
             <div className="hero-body">
               <h1 className="title is-size-3-mobile">
-                Get anything from anywhere you want.
+                Great products, fast.
               </h1>
-              <h2 className="subtitle is-1 is-size-4-mobile">
-                It will be in your hand.
-              </h2>
-              <DownloadAppForm />
               <HelpText>
-                We’ll send you a text with a link to download the app.
+                We&apos;re a digital product studio that helps tech focussed businesses design and build digital products and services, quickly.
               </HelpText>
-              <StoreContainer>
-                <a href={config.iosStore}>
-                  <img src="/images/store-ios.png" alt="Packrs ios store" />
-                </a>
-                <a href={config.androidStore}>
-                  <img
-                    src="/images/store-android.png"
-                    alt="Packrs android store"
-                  />
-                </a>
-              </StoreContainer>
+              <a className="button is-primary is-medium is-rounded has-text-weight-bold">
+                Book a Discovery Call
+              </a>
             </div>
           </section>
+        </div>
+        <div className="column">
+          <img src="/images/mobile-new.png" alt="Packrs android store" />
         </div>
       </div>
     </div>

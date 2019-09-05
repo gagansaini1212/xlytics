@@ -8,13 +8,16 @@ const Section = styled.section`
   padding: 1rem 1.5rem;
   font-family: ${props => props.theme.primaryFontFamily};
   .navbar {
-    background-color: transparent;
+    background-color: ${props => props.theme.backgroundColor};
   }
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
       max-height: 3.75rem;
     }
+  }
+  .navbar-item :hover {
+      background-color: ${props => props.theme.backgroundColor} !important;
   }
   .navbar-menu {
     @media screen and (max-width: 600px) {
@@ -74,7 +77,7 @@ export default class Header extends React.Component {
           >
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
-                <img src="/images/packrs-logo.png" alt="Packrs logo" />
+                <img src="/images/logo.svg" alt="x-lytics logo" />
               </Link>
               <a
                 href="#"
@@ -95,25 +98,23 @@ export default class Header extends React.Component {
               </a>
             </div>
             <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-              <div className="navbar-start">
+              <div className="navbar-end">
                 <Link to="/" className="navbar-item">
-                  Home
+                  Design Sprints
                 </Link>
                 <Link to="/about" className="navbar-item">
+                  Design Sprint Training
+                </Link>
+                <Link to="/support" className="navbar-item">
                   About
                 </Link>
                 <Link to="/support" className="navbar-item">
-                  Support
+                  Blog
                 </Link>
-              </div>
-              <div className="navbar-end">
                 <div className="navbar-item">
-                  <div className="buttons is-hidden-mobile">
-                    <Link to="/partner" className="button is-primary">
-                      <strong>Become a Rider</strong>
-                    </Link>
-                    <Link to="/business" className="button is-light">
-                      Become a Partner
+                  <div className="buttons">
+                    <Link to="/contactUs" className="button is-rounded is-medium is-primary">
+                      Contact Us
                     </Link>
                   </div>
                 </div>

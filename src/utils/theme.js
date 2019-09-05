@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
 import { darken, lighten } from 'polished';
 
-const mainBrandColor = '#33B760';
+const mainBrandColor = '#EC5D51';
 const lightShades = '#F9F9F9';
 const darkAccent = '#726699';
 const darkShades = '#1C1323';
@@ -26,7 +26,7 @@ export const theme = {
 
   primaryColor: mainBrandColor,
   borderColor: '#e0e6ef',
-  backgroundColor: '#FFFFFF',
+  backgroundColor: '#FFC000',
   backgroundInputColor: lightShades,
   backgroundInputColorDark: darkShades,
   fontSize: 16,
@@ -38,7 +38,7 @@ export const theme = {
   textColorInverse: lightShades,
   textColorLite: '#8B8989',
   menuTintColor: darkAccent,
-  primaryFontFamily: "'Nunito', sans-serif",
+  primaryFontFamily: "'Helvetica Neue', sans-serif",
   secondaryFontFamily: "'Open Sans', sans-serif",
   boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
 };
@@ -47,10 +47,11 @@ const GlobalStyle = createGlobalStyle`
   ${reset};
 
   body {
-    font-family: ${theme.secondaryFontFamily};
+    font-family: ${theme.primaryFontFamily};
     color: ${theme.textColor};
     letter-spacing: 0.03rem !important;
     font-size: 17px;
+    background-color: ${theme.backgroundColor};
   }
   .title {
     font-family: ${theme.primaryFontFamily};
