@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   margin: 1rem 0;
   h4 {
-    color: #676767;
+    color: ${props => props.theme.lightHeading};
   }
 `;
 
