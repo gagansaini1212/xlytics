@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import entertainment from '../../static/images/xlytics/guide.jpg';
+import guide from '../../static/images/xlytics/guide.jpg';
 
 const Section = styled.section`
   background-color: ${props => props.theme.backgroundDark};
@@ -32,7 +32,7 @@ const GuideInfo = () => (
           </a>
         </div>
         <div className="column">
-          <img src={entertainment} alt="Guide Book" />
+          <img src={guide} alt="Guide Book" />
         </div>
       </div>
     </div>

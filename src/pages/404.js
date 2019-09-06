@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import AppDownload from '../components/AppDownload';
 
 const Container = styled.div`
   margin-top: 2rem;

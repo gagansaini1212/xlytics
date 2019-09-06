@@ -22,6 +22,9 @@ const Section = styled.section`
   .navbar-item :hover {
     background-color: ${props => props.theme.backgroundColor} !important;
   }
+  .navber-item :focus :active {
+    background-color: transparent;
+  }
   .navbar-menu {
     @media screen and (max-width: 600px) {
       position: absolute;
