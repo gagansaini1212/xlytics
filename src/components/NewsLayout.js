@@ -5,7 +5,6 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import Seo from './Seo';
 import PageLayout from './PageLayout';
-import AppDownload from './AppDownload';
 
 export default function PageTemplate({ data: { mdx } }) {
   return (
@@ -17,7 +16,6 @@ export default function PageTemplate({ data: { mdx } }) {
         </h1>
         <MDXRenderer>{mdx.body}</MDXRenderer>
       </div>
-      <AppDownload />
     </PageLayout>
   );
 }
